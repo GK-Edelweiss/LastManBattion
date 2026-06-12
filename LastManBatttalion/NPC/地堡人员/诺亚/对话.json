@@ -1,0 +1,291 @@
+[
+  {
+    "id": "TALK_noa",
+    "type": "talk_topic",
+    "dynamic_line": "你看到她正在拿着一块平板不断处理着事务，同时在不断的观察周围。",
+    "responses": [
+      {
+        "text": "你好?",
+        "topic": "TALK_noa_2"
+      }
+    ]
+  },
+  {
+    "id": "TALK_noa_2",
+    "type": "talk_topic",
+    "dynamic_line": "嗯哼?有什么事情吗。",
+    "responses": [
+      {
+        "text": "你是什么人？",
+        "topic": "TALK_noa_A"
+      },
+      {
+        "text": "为什么你一直在关注周围？",
+        "topic": "TALK_noa_B"
+      },
+      {
+        "text": "有什么我可以帮忙的吗？",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "打扰了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+{
+    "id": "TALK_noa_1",
+    "type": "talk_topic",
+    "dynamic_line": "还要什么问题吗。",
+    "responses": [
+      {
+        "text": "你是什么人？",
+        "topic": "TALK_noa_A"
+      },
+      {
+        "text": "为什么你一直在关注周围？",
+        "topic": "TALK_noa_B"
+      },
+      {
+        "text": "有什么我可以帮忙的吗？",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "打扰了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_noa_A",
+    "type": "talk_topic",
+    "dynamic_line": "我是这个地堡的资源调配员兼指挥官的秘书，负责对这里的资源进行调配并对指挥官进行定期报告。",
+    "responses": [
+      {
+        "text": "了解了。",
+        "topic": "TALK_noa_1"
+      },
+      {
+        "text": "你有什么东西可以跟我交易吗？",
+        "topic": "TALK_noa_A_1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_noa_A_1",
+    "type": "talk_topic",
+    "dynamic_line": "嗯....虽然我是这里的的资源调配员，但是和外来人员交易显然不在我的职能内，也许你需要的是去找军需官这样的人。",
+    "responses": [
+      {
+        "text": "如果有需要我会去找他们的。",
+        "topic": "TALK_noa_1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_noa_B",
+    "type": "talk_topic",
+    "dynamic_line": "因为我是一个秘书，需要定时报告，既然如此需要仔细观察周围事务并记录下来。",
+    "responses": [
+      {
+        "text": "听起来就像个观察员一样。",
+        "topic": "TALK_noa_1"
+      },
+      {
+        "text": "你平常的工作只有这些吗?",
+        "topic": "TALK_noa_B_1"
+      },
+      {
+        "text": "你之前也在做着类似的工作吗？",
+        "topic": "TALK_noa_B_2"
+      }
+    ]
+  },
+  {
+    "id": "TALK_noa_B_1",
+    "type": "talk_topic",
+    "dynamic_line": "是的，就这么多。",
+    "responses": [
+      {
+        "text": "我了解了。",
+        "topic": "TALK_noa_1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_noa_B_2",
+    "type": "talk_topic",
+    "dynamic_line": "当然，之前我是在管理部门做着一样的工作，在此避难后自然成为了这个工作的最佳人选。",
+    "responses": [
+      {
+        "text": "合适的位置。",
+        "topic": "TALK_noa_1"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_noa_1",
+    "type": "mission_definition",
+    "name": {
+      "str": "鹰眼"
+    },
+    "description": "一台侦查无人机坠毁了，取得里面的黑匣子。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 50000,
+    "item": "lmb_mission_item_2",
+    "end": {
+      "effect": [
+        {
+          "u_spawn_item": "stanag100drum",
+          "count": 2
+        }
+      ]
+    },
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 2, "random": true, "search_range": 150,"z":0 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "         1111           ",
+          "        1111d           ",
+          "         1111111        ",
+          "        1111111         ",
+          "         11111          ",
+          "           1            ",
+          "           1            ",
+          "          11            ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "furniture": { "1": "f_wreckage"  },
+        "item": { "d": [ { "item": "lmb_mission_item_2", "amount": 1 }, { "item": "corpse" } ] },
+        "place_monster": [
+          { "group": "GROUP_ZOMBIE", "x": [ 0, 22 ], "y": [ 1, 22 ],  "target": true, "repeat": [ 0, 4 ] },
+          { "group": "GROUP_ZOMBIE", "x": [ 0, 22 ], "y": [ 1, 22 ],  "target": true, "repeat": [ 0, 4 ] }
+        ]
+      }
+    },
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+    "followup": "MISSION_noa_2",
+    "dialogue": {
+      "describe": "当然，我们有很多事情需要解决，眼下就有一个。",
+      "offer": "我们存有一些灾难前的数据，但是对于灾难后发生在附近的一切事情我们都只能通过人力去了解。好消息是我们发现了一台无人机坠毁在附近，也许我们可以通过调查它的黑匣子来了解它收集的信息。",
+      "accepted": "无人机就坠毁在那，尽量保管好我们的目标",
+      "rejected": "。。。。。",
+      "advice": "也许有一些丧尸被坠毁时的声音吸引，不过数量应该不会很多。",
+      "inquire": "怎么样？",
+      "success": "完好无损，很好，接下来是技术部门的事情了。",
+      "success_lie": "(来自作者的话)你觉得你没找到物品，但是任务完成了，这合理吗",
+      "failure": "哦?任务失败了？。"
+    }
+  },
+  {
+    "id": "MISSION_noa_2",
+    "type": "mission_definition",
+    "name": {
+      "str": "零信号"
+    },
+    "description": "制作五个无线中继模块",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 50000,
+    "item": "radio_repeater_mod",
+    "count": 5,
+    "end": {"effect": [{"u_sell_item": "radio_repeater_mod","count": 5},
+    {"u_spawn_item": "XM7","count": 1},
+    {"u_spawn_item": "xm7mag","count": 4},
+    {"u_spawn_item": "6.8mm","count": 150}]},
+    "start": {"effect": [{"u_spawn_item": "repeater_mod_guide"}]},
+    "origins": ["ORIGIN_SECONDARY"],
+    "followup": "MISSION_noa_3",
+    "dialogue": {
+      "describe": "上次找回来的黑匣子有一些有趣的数据，要听听吗。",
+      "offer": "我们的工作人员发现这个无人机拍摄到一些武装人员的照片，根据他们身上的装备推断他们是幸存的军方行动小组，现在我们急需与他们取得联系来获取任何战力。",
+      "accepted": "现在我们定位了五个无线电基站，但是缺少信号中继器。",
+      "rejected": "。。。。。",
+      "advice": "如果缺少材料可以考虑进小镇里搜索里面的电器店，里面有很多电子材料。",
+      "inquire": "怎么样？",
+      "success": "我们的人现在会带着这五个中继器出发的。",
+      "success_lie": "(来自作者的话)你觉得你没找到物品，但是任务完成了，这合理吗",
+      "failure": "哦?任务失败了？。"
+    }
+  },
+  {
+    "id": "MISSION_noa_3",
+    "type": "mission_definition",
+    "name": {
+      "str": "第一小队"
+    },
+    "description": "跟第一小队进行联络，并且带回侦查报告。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 50000,
+    "item": "lmb_mission_item_3",
+    "end": {"effect": [{"u_sell_item": "lmb_mission_item_3"},
+    {"u_spawn_item": "rx12_injector","count": 2},
+    {"u_spawn_item": "rx11_stimpack","count": 2}]},
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "shelter_roof",
+        "reveal_radius": 2,
+        "z":1,
+        "random": true, 
+        "search_range": 500
+      },
+      "update_mapgen": {
+        "set": [ { "point": "furniture", "id": "f_tourist_table", "x": 16, "y": 12 } ],
+       "place_item": [ { "item": "lmb_mission_item_3", "x": 16, "y": 12, "amount": 1 } ],
+        "place_npcs": [ { "class": "ayg_akayo", "x": 16, "y": 13, "target": true },
+        { "class": "ayg_edelweiss", "x": 9, "y": 8, "target": true },
+        { "class": "ayg_vxxxl", "x": 19, "y": 10, "target": true },
+        { "class": "ayg_hans", "x": 15, "y": 12, "target": true } ]
+            }
+    },
+    "origins": ["ORIGIN_SECONDARY"],
+    "dialogue": {
+      "describe": "上次的事情有点进展了。",
+      "offer": "之前的几个中继器发挥了作用，我们成功联系上了一支战斗小队，现在他们手里有一份侦查报告，我们需要你与他们建立联系并且把报告取回。",
+      "accepted": "他们被部署到了一处公寓屋顶，我会给予你位置。",
+      "rejected": "。。。。。",
+      "advice": "直接找到他们就可以了，很简单的。",
+      "inquire": "怎么样？",
+      "success": "他们的报告很重要。有了这份报告将为我们今后的行动提供情报支援。",
+      "success_lie": "(来自作者的话)你觉得你没找到物品，但是任务完成了，这合理吗",
+      "failure": "哦?任务失败了？。"
+    }
+  },
+  {
+    "id": "lmb_mission_item_3",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str_sp": "侦查报告" },
+    "description": "来自侦查小队的报告，上面记录了小队的侦查内容。",
+    "category": "other",
+    "price": "0USD",
+    "price_postapoc": "0USD",
+    "material": [ "paper" ],
+    "flags": [ "MISSION_ITEM" ],
+    "time": "1 s",
+    "weight": "500 g",
+    "volume": "400 ml",
+    "to_hit": -3
+  }
+]

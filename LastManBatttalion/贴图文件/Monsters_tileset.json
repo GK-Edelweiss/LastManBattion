@@ -1,0 +1,101 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Monsters.png",
+        "tiles": [
+          {
+            "id": "LMB_Rifleman",
+            "fg": 0
+          },          
+          {
+            "id": "LMB_scout",
+            "fg": 1
+          },          
+          {
+            "id": "LMB_Assault",
+            "fg": 3
+          },         
+          {
+            "id": "LMB_Sniper",
+            "fg": 4
+          },         
+          {
+            "id": "LMB_Medic",
+            "fg": 6
+          },         
+          {
+            "id": "LMB_Gunner",
+            "fg": 7
+          },         
+          {
+            "id": "LMB_squad_leader",
+            "fg": 8
+          },         
+          {
+            "id": "Rouge_agent",
+            "fg": 9
+          },         
+          {
+            "id": "agent_hunter",
+            "fg": 10
+          },        
+          {
+            "id": "LMB_new_Rifleman",
+            "fg": 11
+          },         
+          {
+            "id": "LMB_elite_new_Rifleman",
+            "fg": 12
+          },         
+          {
+            "id": "LMB_elite_new_Rifleman_1",
+            "fg": 13
+          },          
+          {
+            "id": "LMB_Grenadier",
+            "fg": 2
+          },          
+          {
+            "id": "LMB_Engineer",
+            "fg": 5
+          },
+          {
+            "id": "srs",
+            "fg": 14
+          },          
+          {
+            "id": "overlay_wielded_srs",
+            "fg": 15
+          },
+          {
+            "id": "an94",
+            "fg": 16
+          },          
+          {
+            "id": "overlay_wielded_an94",
+            "fg": 17
+          }         
+          ],
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y":0
+      }
+    ]
+  }
+]

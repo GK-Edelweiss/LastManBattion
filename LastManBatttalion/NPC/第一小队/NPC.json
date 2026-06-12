@@ -1,0 +1,49 @@
+[
+    {
+        "type": "npc",
+        "id": "ayg_akayo",
+        "name_unique": "AKAYO",
+        "name_suffix": "中校",
+        "gender": "female",
+        "class": "akayo_class",
+        "attitude": 0,
+        "mission": 3,
+        "chat": "TALK_AKAYO",
+        "faction": "JTF"
+      },
+      {
+        "type": "npc",
+        "id": "ayg_edelweiss",
+        "name_unique": "雪绒花",
+        "name_suffix": "中尉",
+        "gender": "female",
+        "class": "edelweiss_class",
+        "attitude": 0,
+        "mission": 3,
+        "chat": "TALK_Edelweiss_0",
+        "faction": "JTF",
+        "mission_offered": "MISSION_RAMAPAGE_1"
+      },
+      {
+        "type": "npc",
+        "id": "ayg_vxxxl",
+        "name_unique": "VXXXL",
+        "name_suffix": "少尉",
+        "class": "vxxxl_class",
+        "attitude": 0,
+        "mission": 3,
+        "chat": "TALK_VXXXL",
+        "faction": "JTF"
+      },
+      {
+        "type": "npc",
+        "id": "ayg_hans",
+        "name_unique": "汉斯",
+        "name_suffix": "少校",
+        "class": "hans_class",
+        "attitude": 0,
+        "mission": 3,
+        "chat": "TALK_HANS",
+        "faction": "JTF"
+      }
+]

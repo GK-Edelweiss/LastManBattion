@@ -1,0 +1,10 @@
+[{
+	"type":"item_group",
+	"id":"lmb_helmet",
+	"subtype":"distribution",
+	"items":[
+	{"group":"army_helmet_nvg","prob":90},
+	{"group":"tac_helmet_nvg","prob":10}
+	]
+}
+]

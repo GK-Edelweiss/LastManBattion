@@ -1,0 +1,17 @@
+[
+    {
+        "type": "item_group",
+        "//":"炮台",
+        "subtype": "collection",
+        "id": "lmb_robot_m240",
+        "magazine": 100,
+        "ammo": 100,
+        "entries":[
+            {"item":"broken_crows_m240"},
+            {
+                "item":"steel_plate",
+                "count":[2,4]
+            }
+    ]
+      }
+]

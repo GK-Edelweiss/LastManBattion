@@ -1,0 +1,250 @@
+[
+{
+    "id": "lmb_rifle_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"heavy_load_bearing_vest",
+		"contents-group":"lmb_vset_group"
+	}
+          ]
+},
+{
+    "id": "lmb_vset_group",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+          {
+		"item":"radio_pouch",
+		"contents-item":"two_way_radio"
+	},
+	{
+		"item":"triple_stacker_pouch",
+		"contents-group":"lmb_ar_ammo_885a1"
+	},
+	{
+		"item":"gadget_pouch",
+		"contents-group":"lmb_rifleman_grenade"
+	}
+          ]
+},
+{
+    "id": "lmb_ar_ammo_885a1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"stanag30",
+		"ammo-item":"556_m855a1",
+		"charges":[20,30],
+		"count":3
+          }
+          ]
+},
+{
+    "id": "lmb_rifleman_grenade",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"flashbang",
+		"prob":50,
+		"count":[1,3]
+	},
+	{
+		"item":"grenade_inc",
+		"prob":50,
+		"count":[1,3]
+	}
+          ]
+},
+{
+    "id": "lmb_rifle_vest_1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"heavy_load_bearing_vest",
+		"contents-group":"lmb_vset_group_1"
+	}
+          ]
+},
+{
+    "id": "lmb_vset_group_1",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+          {
+		"item":"radio_pouch",
+		"contents-item":"two_way_radio"
+	},
+	{
+		"item":"triple_stacker_pouch",
+		"contents-group":"lmb_ar_ammo_885a1_1"
+	},
+	{
+		"item":"gadget_pouch",
+		"contents-group":"lmb_rifleman_grenade_1",
+		"prob":20
+	}
+          ]
+},
+{
+    "id": "lmb_ar_ammo_885a1_1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"stanag30",
+		"ammo-item":"556_m855a1",
+		"charges":[5,20],
+		"count":[1,3]
+          }
+          ]
+},
+{
+    "id": "lmb_rifleman_grenade_1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"flashbang",
+		"prob":50,
+		"count":[1,2]
+	},
+	{
+		"item":"grenade_inc",
+		"prob":50,
+		"count":[1,2]
+	}
+          ]
+},
+{
+    "id": "lmb_scout_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"ballistic_vest_light",
+		"contents-group":"lmb_scout_vset_group"
+	}
+          ]
+},
+{
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "lmb_scout_vset_group",
+    "magazine": 100,
+    "entries": [
+      {"item":"esapi_plate","prob":50,"count":[1,2]},
+      {"group":"pals_1","prob":80},
+	{"group":"pals_2","prob":60},
+	{"group":"pals_3","prob":40}
+    ]
+  },
+{
+    "id": "lmb_assault_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"ballistic_vest_light",
+		"contents-group":"lmb_assault_vest_group"
+	}
+          ]
+},
+{
+    "id": "lmb_assault_vest_group",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+	{"item":"esapi_plate","count":[1,2]},
+	{"group":"pals_1","prob":80},
+	{"group":"pals_2","prob":60},
+	{"group":"pals_3","prob":40}
+          ]
+},
+{
+    "id": "lmb_sniper_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"ballistic_vest_light",
+		"contents-group":"lmb_sniper_vest_group"
+	}
+          ]
+},
+{
+    "id": "lmb_sniper_vest_group",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+	{"item":"esapi_plate","count":[1,2]},
+	{"group":"pals_1","prob":80,"count":[1,2]},
+	{"group":"pals_2","prob":60}
+          ]
+},
+{
+  "id": "lmb_engineer_vest",
+  "type": "item_group",
+  "subtype": "distribution",
+  "entries": [
+    {
+  "item":"ballistic_vest_light_pouches",
+  "contents-group":"lmb_engineer_vest_group"
+}
+        ]
+},
+{
+  "id": "lmb_engineer_vest_group",
+  "type": "item_group",
+  "subtype": "collection",
+  "entries": [
+{"item":"esapi_plate","count":[1,2]},
+{"group":"pals_1","prob":80,"count":[1,2]},
+{"group":"pals_2","prob":60}
+        ]
+},
+{
+    "id": "pals_1",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+          {
+		"distribution": [
+	{"item":"gadget_pouch","prob":30},
+	{"item":"tactical_grenade_pouch","prob":10},
+	{"item":"chestpouch","prob":50},
+	{"item":"radio_pouch","prob":10}
+    ]}
+          ]
+},
+{
+    "id": "pals_2",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+          {
+		"distribution": [
+	{"item":"dump_pouch","prob":80},
+	{"item":"grenade_pouch","prob":20}
+    ]}
+          ]
+},
+{
+    "id": "pals_3",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+          {
+		"distribution": [
+	{"item":"ammo_satchel","prob":30},
+	{"item":"tool_pouch","prob":5},
+	{"item":"ammo_pouch","prob":15},
+	{"item":"deployment_bag","prob":50}
+    ]}
+          ]
+}
+]

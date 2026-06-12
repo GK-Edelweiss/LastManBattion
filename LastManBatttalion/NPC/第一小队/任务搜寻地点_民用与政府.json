@@ -1,0 +1,80 @@
+[
+    {
+        "id": "MISSION_LMB_RESORT",
+        "type": "mission_definition",
+        "name": { "str": "寻找私人度假村" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "私人度假村在这。",
+        "destination": "p_resort_1nw",
+        "start": {
+          "assign_mission_target": { "om_terrain": "p_resort_1nw", "om_special": "privare_resort", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_IRRADIATOR",
+        "type": "mission_definition",
+        "name": { "str": "寻找辐照厂" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "辐照厂在这。",
+        "destination": "irradiator_1_8",
+        "start": {
+          "assign_mission_target": { "om_terrain": "irradiator_1_9", "om_special": "IRRADIATOR", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_FORT",
+        "type": "mission_definition",
+        "name": { "str": "寻找城堡要塞" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "城堡要塞在这。",
+        "destination": "rort_2c",
+        "start": {
+          "assign_mission_target": { "om_terrain": "rort_2c", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_S_LIGHTINDUSTRY",
+        "type": "mission_definition",
+        "name": { "str": "寻找轻工厂" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "轻工厂在这。",
+        "destination": "s_lightindustry_00",
+        "start": {
+          "assign_mission_target": { "om_terrain": "s_lightindustry_00", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_TEMPLE",
+        "type": "mission_definition",
+        "name": { "str": "寻找神秘庙宇" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "神秘庙宇在这。",
+        "destination": "temple_stairs",
+        "start": {
+          "assign_mission_target": { "om_terrain": "temple_stairs", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_HAZ_SAR",
+        "type": "mission_definition",
+        "name": { "str": "寻找放射地埋藏点" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "放射地埋藏点在这。",
+        "destination": "haz_sar_1_1",
+        "start": {
+          "assign_mission_target": { "om_terrain": "haz_sar_1_1", "reveal_radius": 3, "cant_see": true }
+        }
+      }
+]

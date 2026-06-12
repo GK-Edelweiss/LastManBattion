@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ammo_can_ammo_pouch_762_54R_full",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "group": "ammo_pouch_762_54R", "count": 7 } ]
+  },
+  {
+    "id": "ammo_can_ammo_pouch_762_54R_part",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "group": "ammo_pouch_762_54R", "count": [ 1, 6 ] } ]
+  },
+  {
+    "id": "ammo_pouch_762_54R",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "group": "box_762_54R_clips", "count": 4 } ]
+  },
+  {
+    "id": "box_762_54R_clips",
+    "type": "item_group",
+    "items": [ { "item": "762_54R", "count": 1 } ]
+  }
+]

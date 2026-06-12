@@ -1,0 +1,67 @@
+[
+  {
+    "id": "MISSION_LMB_FEMA",
+    "type": "mission_definition",
+    "name": { "str": "寻找FEMA营地" },
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 0,
+    "value": 0,
+    "description": "FEMA营地在这",
+    "destination": "FEMA_entrance",
+    "start": {
+      "assign_mission_target": { "om_terrain": "FEMA_entrance", "reveal_radius": 3, "cant_see": true }
+      }
+  },
+      {
+        "id": "MISSION_LMB_OUTPOST",
+        "type": "mission_definition",
+        "name": { "str": "寻找军事哨站" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "军事哨站在这。",
+        "destination": "outpost",
+        "start": {
+          "assign_mission_target": { "om_terrain": "outpost", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_HELIPAD",
+        "type": "mission_definition",
+        "name": { "str": "寻找军用直升机停机坪" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "军用直升机停机坪在这。",
+        "destination": "helipad_nw",
+        "start": {
+          "assign_mission_target": { "om_terrain": "helipad_nw", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_BUNKER",
+        "type": "mission_definition",
+        "name": { "str": "寻找军事掩体" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "军事掩体在这。",
+        "destination": "bunker",
+        "start": {
+          "assign_mission_target": { "om_terrain": "bunker", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+      "id": "MISSION_LMB_S_GAS_BUNKER",
+      "type": "mission_definition",
+      "name": { "str": "寻找加油站地堡" },
+      "goal": "MGOAL_GO_TO_TYPE",
+      "difficulty": 0,
+      "value": 0,
+      "description": "加油站地堡在这",
+      "destination": "s_gas_g1",
+      "start": {
+        "assign_mission_target": { "om_terrain": "s_gas_g1", "om_special": "gas station bunker", "reveal_radius": 3, "cant_see": true }
+      }
+    }
+]

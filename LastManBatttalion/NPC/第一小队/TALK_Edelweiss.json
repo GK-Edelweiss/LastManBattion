@@ -1,0 +1,471 @@
+[
+    {
+        "id": "TALK_Edelweiss_0",
+        "type": "talk_topic",
+        "dynamic_line": "她在靠近着边缘的地方用设备观察着远方，不时还打开着PDA进行记录。“有什么事情吗？”",
+        "responses": [
+          {
+            "text": "你是谁？",
+            "topic": "TALK_Edelweiss_1"
+          },
+          {
+            "text": "你有观察到什么吗？",
+            "topic": "TALK_Edelweiss_2"
+          },
+          {
+            "text": "我想了解一下当地的情报.....",
+            "topic": "TALK_Edelweiss_3"
+          },
+          {
+            "text": "你们有什么工作需要我帮忙吗？",
+            "topic": "TALK_MISSION_LIST"
+          },
+          {
+            "text": "没有，打扰了。",
+            "topic": "TALK_DONE"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss",
+        "type": "talk_topic",
+        "dynamic_line": "还有其他事情吗？",
+        "responses": [
+          {
+            "text": "你是谁？",
+            "topic": "TALK_Edelweiss_1"
+          },
+          {
+            "text": "你有观察到什么吗？",
+            "topic": "TALK_Edelweiss_2"
+          },
+          {
+            "text": "我想了解一下当地的情报.....",
+            "topic": "TALK_Edelweiss_3"
+          },
+          {
+            "text": "你们有什么工作需要我帮忙吗？",
+            "topic": "TALK_MISSION_LIST"
+          },
+          {
+            "text": "没有，打扰了。",
+            "topic": "TALK_DONE"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_1",
+        "type": "talk_topic",
+        "dynamic_line": "你如果需要叫我的话就叫雪绒花，我是队伍里的侦查员，负责观察周边的情况和动向。",
+        "responses": [
+          {
+            "text": "额...好的，我知道了，雪绒花。",
+            "topic": "TALK_Edelweiss"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_2",
+        "type": "talk_topic",
+        "dynamic_line": "没什么有趣的，丧尸，奇怪的生物，偶然出现的幸存者和幸存者军队们。",
+        "responses": [
+          {
+            "text": "听起来枯燥乏味的。",
+            "topic": "TALK_Edelweiss"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3",
+        "type": "talk_topic",
+        "dynamic_line": "你需要哪些情报。",
+        "responses": [
+          {
+            "text": "某个民用建筑...",
+            "topic": "TALK_Edelweiss_3_A"
+          },
+          {
+            "text": "某个军用建筑...",
+            "topic": "TALK_Edelweiss_3_B"
+          },
+          {
+            "text": "一些特殊的地点...",
+            "topic": "TALK_Edelweiss_3_C"
+          },
+          {
+            "text": "我想知道这些情报需要的COFDM军用无线电要从哪里获取。",
+            "topic": "TALK_Edelweiss_3_D"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A",
+        "type": "talk_topic",
+        "dynamic_line": "仔细说明你要找的建筑的特征。",
+        "responses": [
+          { "text": "某个富豪的度假村。", "topic": "TALK_Edelweiss_3_A_A" },
+          { "text": "辐射照射工厂。", "topic": "TALK_Edelweiss_3_A_B" },
+          { "text": "一个古老的城堡要塞。", "topic": "TALK_Edelweiss_3_A_C" },
+          { "text": "地区的轻工厂。", "topic": "TALK_Edelweiss_3_A_D" },
+          { "text": "本地人传说的神秘庙宇", "topic": "TALK_Edelweiss_3_A_E" },
+          { "text": "政府的放射性物质埋藏地", "topic": "TALK_Edelweiss_3_A_F" },
+          { "text": "想了一下或许我暂时不需要了。", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_B",
+        "type": "talk_topic",
+        "dynamic_line": "你需要了解哪个军事地点的情报。",
+        "responses": [
+          { "text": "政府设立的应急营地。", "topic": "TALK_Edelweiss_3_B_A" },
+          { "text": "一所军事哨站。", "topic": "TALK_Edelweiss_3_B_B" },
+          { "text": "一个军用直升机停机坪。", "topic": "TALK_Edelweiss_3_B_C" },
+          { "text": "某处军事掩体。", "topic": "TALK_Edelweiss_3_B_D" },
+          { "text": "隐秘的军队秘密地堡。", "topic": "TALK_Edelweiss_3_B_F" },
+          { "text": "想了一下或许我暂时不需要了。", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_C",
+        "type": "talk_topic",
+        "dynamic_line": "请注意，这些地点都是全图唯一或是生成概率极低，不建议反复问我一个地点。如因此有弹错等概不负责。",
+        "responses": [
+          { "text": "新英格兰地区的军事基地。", "topic": "TALK_Edelweiss_3_C_A" },
+          { "text": "传说中的航母。", "topic": "TALK_Edelweiss_3_C_B" },
+          { "text": "本地的核电站。", "topic": "TALK_Edelweiss_3_C_C" },
+          { "text": "想了一下或许我暂时不需要了。", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A_A",
+        "type": "talk_topic",
+        "dynamic_line": "一处度假村，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_RESORT" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A_B",
+        "type": "talk_topic",
+        "dynamic_line": "辐照厂，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_IRRADIATOR" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A_C",
+        "type": "talk_topic",
+        "dynamic_line": "城堡要塞，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_FORT" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A_D",
+        "type": "talk_topic",
+        "dynamic_line": "一处轻工厂，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_S_LIGHTINDUSTRY" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A_E",
+        "type": "talk_topic",
+        "dynamic_line": "神秘庙宇，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_TEMPLE" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_A_F",
+        "type": "talk_topic",
+        "dynamic_line": "放射埋藏点，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_HAZ_SAR" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_B_A",
+        "type": "talk_topic",
+        "dynamic_line": "一处FEMA营地，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_FEMA" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_B_B",
+        "type": "talk_topic",
+        "dynamic_line": "一个军事哨站，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_OUTPOST" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_B_C",
+        "type": "talk_topic",
+        "dynamic_line": "军事直升机停机坪，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_HELIPAD" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_B_D",
+        "type": "talk_topic",
+        "dynamic_line": "一个军事掩体，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_BUNKER" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_B_F",
+        "type": "talk_topic",
+        "dynamic_line": "一处加油站地堡，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_S_GAS_BUNKER" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_C_A",
+        "type": "talk_topic",
+        "dynamic_line": "本地唯一的军事基地，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_MILITARY_BASE" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_C_B",
+        "type": "talk_topic",
+        "dynamic_line": "唯一一艘航母，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_AIRCRAFT_CARRIER" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_C_C",
+        "type": "talk_topic",
+        "dynamic_line": "还在自动运作的核电站，我需要一台CDFOM无线电。",
+        "responses": [
+          {
+            "text": "上交物品",
+            "topic": "TALK_DONE",
+            "condition": { "u_has_item": "lmb_COFDM" },
+            "effect": [ { "assign_mission": "MISSION_LMB_NUCLEAR_PLANT" }, { "u_consume_item": "lmb_COFDM" } ]
+          },
+          {
+            "text": "额，我知道了，我凑够了就给你。",
+            "topic": "TALK_Edelweiss",
+            "condition": { "not": { "u_has_item": "lmb_COFDM" } }
+          },
+          { "text": "让我思考一下.", "topic": "TALK_Edelweiss" }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_3_D",
+        "type": "talk_topic",
+        "dynamic_line": "你需要自己制造获取，制造配方记录在一本名为先进电子材料教材里，如果你手上缺少这本教材，我可以以50凤凰币的价格卖给你。",
+        "responses": [
+          {
+            "text": "我现在需要一本。",
+            "condition": {
+              "not": {
+                "u_has_item": "LMB_AES_BOOK"
+              }
+            },
+            "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_Edelweiss_YES",
+          "effect": [
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "u_spawn_item": "LMB_AES_BOOK",
+              "count": 1
+            }
+          ]
+        },
+        "failure": {
+          "topic": "TALK_Edelweiss_NO"
+        }
+          },
+          {
+            "text": "我了解了，让我们谈点别的。",
+            "topic": "TALK_Edelweiss"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_YES",
+        "type": "talk_topic",
+        "dynamic_line": "这是你需要的书，配方就在里面，拿去吧。",
+        "responses": [
+          {
+            "text": "（收下)",
+            "topic": "TALK_Edelweiss"
+          }
+        ]
+      },
+      {
+        "id": "TALK_Edelweiss_NO",
+        "type": "talk_topic",
+        "dynamic_line": "这东西我不会白送你，再去找些凤凰币来吧。",
+        "responses": [
+          {
+            "text": "额...好吧。",
+            "topic": "TALK_Edelweiss"
+          }
+        ]
+      }
+]

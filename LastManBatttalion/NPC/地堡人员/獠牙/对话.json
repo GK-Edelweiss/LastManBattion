@@ -1,0 +1,107 @@
+[
+{
+    "id": "TALK_hk416",
+    "type": "talk_topic",
+    "dynamic_line": "有什么事情吗。",
+    "responses": [
+      {
+        "text": "你是谁？",
+        "topic": "TALK_hk416_A"
+      },
+      {
+        "text": "你在这里做什么?",
+        "topic": "TALK_hk416_B"
+      },
+      {
+        "text": "有什么我可以帮忙的吗？",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "打扰了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_A",
+    "type": "talk_topic",
+    "dynamic_line": "我只是一名叛变特工，现在在这里歇脚。",
+    "responses": [
+      {
+        "text": "了解了。",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_B",
+    "type": "talk_topic",
+    "dynamic_line": "歇脚，休息。这里的那些人愿意给我留个空位，只要我安分守己。",
+    "responses": [
+      {
+        "text": "我还以为他们不会让你在这的。",
+        "topic": "TALK_hk416_B_1"
+      },
+      {
+        "text": "那你平常做什么，一直待在这里吗?",
+        "topic": "TALK_hk416_B_2"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_B_1",
+    "type": "talk_topic",
+    "dynamic_line": "或许是我过去的名声作祟吧。",
+    "responses": [
+      {
+        "text": "不管怎么样，至少你在这了。",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_B_2",
+    "type": "talk_topic",
+    "dynamic_line": "出去搜索物资、观察尸潮情况、看看外边有没有土匪游荡。作为精英人....特工，我的准则不允许我在这混吃混喝。",
+    "responses": [
+      {
+        "text": "挺好的。",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_hk416",
+    "type": "mission_definition",
+    "name": {
+      "str": "寻找M320"
+    },
+    "description": "特工獠牙委托你帮他寻找一把M320榴弹发射器。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 50000,
+    "item": "m320",
+    "end": {
+      "effect": [
+        {
+          "u_spawn_item": "new_ai_module",
+          "count": 1
+        }
+      ]
+    },
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+    "dialogue": {
+      "describe": "我确实有件事需要有人帮我，你有兴趣吗?",
+      "offer": "我的国土战略局吊舱发射器在上次行动弄丢了，眼下需要把M320来补上这个火力空缺。",
+      "accepted": "很好，那就麻烦你了。",
+      "rejected": "。。。。。",
+      "advice": "去找找军事地点，M320现在部分装备着，那些地方很可能会有的。",
+      "inquire": "怎么样？",
+      "success": "不错，很感谢你。我手上有着一个之前找到的武器改造装置，或许它可以帮助你。",
+      "success_lie": "(来自作者的话)你觉得你没找到物品，但是任务完成了，这合理吗",
+      "failure": "没找到?看来只能将就着了。"
+    }
+  }
+  ]

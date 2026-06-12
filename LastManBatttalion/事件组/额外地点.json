@@ -1,0 +1,161 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_lmb_patrol",
+    "object": { "place_nested": [ { "chunks": [ "mx_lmb_patrol" ], "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "mx_lmb_patrol",
+    "object": {
+      "mapgensize": [
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        3
+      ],
+      "place_monster": [
+        {
+          "monster": "LMB_new_Rifleman",
+          "x": 10,
+          "y": 10
+          },
+          {
+          "monster": "LMB_new_Rifleman",
+          "x": 11,
+          "y": 11
+          },
+          {
+          "monster": "LMB_new_Rifleman",
+          "x": 12,
+          "y": 12
+          },
+          {
+          "monster": "LMB_new_Rifleman",
+          "x": 9,
+          "y": 9
+          },
+          {
+          "monster": "LMB_elite_new_Rifleman",
+          "x": 9,
+          "y": 10
+          }
+          ]
+          }
+  },
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_lmb_scout",
+    "object": { "place_nested": [ { "chunks": [ "mx_lmb_scout" ], "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "mx_lmb_scout",
+    "object": {
+      "mapgensize": [
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        3
+      ],
+    "place_monster": [
+        {
+          "monster": "LMB_scout",
+          "x": 10,
+          "y": 10
+          },
+          {
+          "monster": "LMB_scout",
+          "x": 11,
+          "y": 11
+          },
+          {
+          "monster": "LMB_scout",
+          "x": 12,
+          "y": 12
+          },
+          {
+          "monster": "LMB_scout",
+          "x": 9,
+          "y": 9
+          },
+          {
+          "monster": "LMB_elite_new_Rifleman",
+          "x": 9,
+          "y": 10
+          }
+          ]
+          }
+          },
+          {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_lmb_raiders",
+    "object": { "place_nested": [ { "chunks": [ "mx_lmb_raiders" ], "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "mx_lmb_raiders",
+    "object": {
+      "mapgensize": [
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        3
+      ],
+      "place_monster": [
+        {
+          "monster": "Rouge_agent",
+          "x": 10,
+          "y": 10
+          },
+          {
+          "monster": "LMB_squad_leader",
+          "x": 11,
+          "y": 11
+          },
+          {
+          "monster": "LMB_squad_leader",
+          "x": 12,
+          "y": 12
+          },
+          {
+          "monster": "LMB_Medic",
+          "x": 9,
+          "y": 9
+          }
+          ]
+          }
+          },
+          {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_agent_hunter",
+    "object": { "place_nested": [ { "chunks": [ "mx_agent_hunter" ], "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "mx_agent_hunter",
+    "object": {
+      "mapgensize": [
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        3
+      ],
+      "place_monster": [
+        {
+          "monster": "agent_hunter",
+          "x": 10,
+          "y": 10
+        }
+      ]
+          }
+          }
+          ]

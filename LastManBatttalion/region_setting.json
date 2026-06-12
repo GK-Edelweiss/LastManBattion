@@ -1,0 +1,25 @@
+[
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "map_extras": {
+      "road": {
+        "chance": 75,
+        "extras": {
+          "mx_lmb_patrol": 3,
+          "mx_lmb_scout": 3,
+          "mx_lmb_raiders":2,
+          "mx_agent_hunter":1
+        }
+      },
+      "field": {
+        "extras": {
+          "mx_lmb_patrol": 3,
+          "mx_lmb_scout": 3,
+          "mx_lmb_raiders":2,
+          "mx_agent_hunter":1
+        }
+    }
+  }
+  }
+]

@@ -1,0 +1,34 @@
+[
+{
+    "id": "lmb_ballistic_half_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [{"distribution": [{"item":"ballistic_vest_esapi","contents-group":"lmb_esapi_half"}]}]
+},
+{
+  "id": "lmb_esapi_half",
+  "type": "item_group",
+  "subtype": "collection",
+  "entries": [
+  {"item":"esapi_plate","count":[1,2]},
+	{"item":"esbi_plate","count":[1,2]}
+          ]
+},
+{
+    "id": "lmb_ballistic_heavy_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {"distribution": [{"item":"ballistic_vest_heavy","contents-group":"lmb_esapi_full"}]}
+          ]
+},
+{
+    "id": "lmb_esapi_full",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {"item":"esapi_plate","count":2},
+	    {"item":"esbi_plate","count":2}
+          ]
+}
+]

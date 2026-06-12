@@ -1,0 +1,97 @@
+[
+    {
+        "id": "MISSION_Prapor",
+        "type": "mission_definition",
+        "name": { "str": "首秀" },
+        "goal": "MGOAL_ASSASSINATE",
+        "description": "前往目标地点解决几个强盗。",
+        "difficulty": 5,
+        "value": 0,
+        "end": {
+          "effect": [
+            {
+              "u_spawn_item": "money_strap_FMCNote",
+              "count": 2
+            },
+            {
+              "u_spawn_item": "545_ap",
+              "count": 90
+            }
+          ]
+        },
+        "start": {
+          "assign_mission_target": { "om_terrain": "field", "reveal_radius": 2, "random": true, "search_range": 100,"z":0 },
+          "update_mapgen": {
+            "place_npcs": [ { "class": "bandit", "x": 12, "y": 12, "target": true },
+            { "class": "bandit", "x": 11, "y": 11, "target": true },
+            { "class": "bandit", "x": 10, "y": 10, "target": true } ]
+          }
+        },
+        "origins": [ "ORIGIN_SECONDARY" ],   
+        "followup": "MISSION_Prapor_2", 
+        "has_generic_rewards": false,
+        "dialogue": {
+          "describe": "你想要找点活干?找对了。",
+          "offer": "虽说能活下来的都不是普通人，但是我是不会轻信别人的，你得把实力证明给我看，怎么样？",
+          "accepted": "那我们就简单点，去这个地点，到那去解决几个在现场的家伙，就这么多。",
+          "rejected": "哦?或许你需要的是做好准备而不是临阵脱逃",
+          "advice": "几个该死的强盗而已，当然你可以叫更多的人压死他们，物理意义上的。",
+          "inquire": "怎么样？",
+          "success": "解决了?看来我们的信任更进了一步。",
+          "success_lie": "真嘟假嘟，我不是很相信啊",
+          "failure": "这也能失败?"
+        }
+      },
+      {
+        "id": "MISSION_Prapor_2",
+        "type": "mission_definition",
+        "name": { "str": "枪匠" },
+        "goal": "MGOAL_FIND_ITEM",
+        "description": "为Prapor的朋友找几个高端的瞄具，清单有：一把M1A，高端步枪瞄准镜，消音器，双脚架护手还有模块化折叠枪托。找到之后在制作栏搜索 组装好的M1A（封存） 制作后上交。",
+        "difficulty": 5,
+        "value": 0,
+        "item": "lmb_mission_item_4",
+        "end": {
+          "effect": [
+            {
+              "u_spawn_item": "mk47",
+              "count": 1
+            },
+            {
+              "u_spawn_item": "akmag30",
+              "count": 3
+            }
+          ]
+        },
+        "origins": [ "ORIGIN_SECONDARY" ],    
+        "has_generic_rewards": false,
+        "dialogue": {
+          "describe": "我这里还有很多活，想听听吗。",
+          "offer": "我有一个朋友，他的身份我要保密一下，我们叫他神射手先生吧，他在大灾变后还活得好好的。这段时间他正计划出去打猎，但是他缺少一把趁手的新枪。",
+          "accepted": "我给你一个清单，按着上面的要求去帮我找来这些东西。就这么简单。",
+          "rejected": "或许神枪手先生需要更多时间来处理它的清单了，显然这会让我费心。",
+          "advice": "这些高端的枪械配件明显不在军队的军火库里，你需要去枪械商店里面寻找。",
+          "inquire": "怎么样？",
+          "success": "都带来了？我会马上把东西送过去给它的，这是你的报酬。",
+          "success_lie": "？",
+          "failure": "这也能失败?"
+        }
+      },
+      {
+        "id": "lmb_mission_item_4",
+        "type": "ITEM",
+        "subtypes": [ "GENERIC" ],
+        "name": { "str": "组装好的M1A(已打包封装)" },
+        "description": "一把M1A步枪，加装了一批高端配件。他被用于某个订单，因此封装了起来无法使用。",
+        "weight": "4535 g",
+      "volume": "2 L",
+      "price": "0USD",
+      "price_postapoc": "0USD",
+      "to_hit": -1,
+      "material": [
+        "steel"
+      ],
+      "symbol": ";",
+      "color": "light_gray"
+      }
+    ]

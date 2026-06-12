@@ -1,0 +1,513 @@
+[
+{
+    "type": "mapgen",
+    "om_terrain": ["lmb_mil_bunker_z2"],
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        " X                      ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+      "X": "t_radio_tower"
+       }
+    }
+  },
+{
+    "type": "mapgen",
+    "om_terrain": ["lmb_mil_bunker_z1"],
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        " X                      ",
+        ",,,,                    ",
+        ",,,,                    ",
+        ",,,,                    ",
+        ",,,,                    ",
+        ",,,,                    ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { 
+      ",": "t_thconc_floor",
+      "X": "t_radio_tower"
+       }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": ["lmb_mil_bunker_road"],
+    "object": {
+      "rows": [
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " ///++/////             ",
+        " ////++/////            ",
+        " /////++/////           ",
+        " /////////////          ",
+        " //////++//////         ",
+        " ///////++//////        ",
+        "  ///////++//////       ",
+        "   ///////////////      ",
+        "    ///////++//////     ",
+        "    ///////++///////    ",
+        "    ///////++///////    ",
+        "    ////////////////    ",
+        "    ///////++///////    ",
+        "    ///////++///////    ",
+        "    ///////++///////    ",
+        "    ////////////////    ",
+        "    ///////++///////    ",
+        "    ///////++///////    ",
+        "    ///////++///////    ",
+        "    ////////////////    "
+      ],
+      "terrain": {
+      "/": "t_pavement",
+      "+": "t_pavement_y",
+      " ": [ "t_grass", "t_grass", "t_grass", "t_dirt" ]
+       }
+    }
+  },
+{
+    "type": "mapgen",
+    "om_terrain": [ "lmb_mil_bunker"],
+    "object": {
+      "rows": [
+        "||||||||||||||||||      ",
+        "|X......cc|cc....|      ",
+        "MMMMss...c|......|      ",
+        "M,,M.s....|......|      ",
+        "M,,D......+......|      ",
+        "M>>M.s....|f.....|      ",
+        "MMMMss....|f....s|      ",
+        "|.........|ss..ss|      ",
+        "|.........|||++|||      ",
+        "|.........|             ",
+        "|.........|      S      ",
+        "|@........|SS  SSS      ",
+        "|/////////|             ",
+        "|/////////|             ",
+        "|/////////|             ",
+        "|/////////|             ",
+        "|/////////|      FFFF   ",
+        "|/////////|      FppF   ",
+        "|/////////|       ppF   ",
+        "|/////////|      FppF   ",
+        "|/////////|      FFFF   ",
+        "|/////////|             ",
+        "|/////////|             ",
+        "|+++++++++|             "
+      ],
+      "terrain": {
+        " ": [ "t_grass", "t_grass", "t_grass", "t_dirt" ],
+        "#": "t_floor",
+        ".": "t_concrete",
+        "s": "t_concrete",
+        "S": "t_grass",
+        "f": "t_concrete",
+        "c": "t_concrete",
+        "+": "t_chaingate_l",
+        ",": "t_thconc_floor",
+        "/": "t_elevator",
+        "@": "t_elevator_control",
+        ">": "t_stairs_down",
+        "D": "t_door_metal_c",
+        "X": "t_radio_tower",
+        "M": "t_strconc_wall",
+        "|": "t_chainfence",
+        "p": "t_pit_corpsed",
+        "F": "t_fence_barbed"
+      },
+      "furniture": { 
+      "s": "f_sandbag_half",
+      "S": "f_sandbag_half",
+      "f": "f_foot_locker_aluminum",
+      "c": "f_crate_c"
+        },
+        "items": { 
+        "c": { "item": "airdrop_military_kit", "repeat": [ 1, 2 ] },
+        "f": { "item": "lmb_boxed_mil","repeat": [ 1, 3 ]}
+    },
+      "place_monsters": [
+        { "monster": "GROUP_MIL_MASS_GRAVE", "density": 0.2, "x":  17, "y": 14},
+        { "monster": "GROUP_MIL_BASE", "density": 0.2, "x": 8, "y": 6 },
+        { "monster": "GROUP_MIL_STRONG", "density": 0.2, "x": 3, "y": 14 }
+      ]
+    }
+  },
+  {
+	"type":"item_group",
+	"id":"lmb_boxed_mil",
+	"subtype":"distribution",
+	"entries":[
+	{ "group": "boxed_223_50_used"},
+  { "group": "boxed_308_20_used"},
+  { "group": "boxed_9mm_100_used"}
+	]
+	},
+  {
+    "type": "mapgen",
+    "om_terrain": ["lmb_mil_bunker_z-1"],
+    "object": {
+      "fill_ter": "t_soil",
+      "rows": [
+        "                        ",
+        "                        ",
+        "MMMM                    ",
+        "M>>MMMMMMMM             ",
+        "M,,+,,,,,,M             ",
+        "M<<M,,,,,,M             ",
+        "MMMMtt,,,fM             ",
+        "   Mc,,,,fM             ",
+        "   Mtt,,,fM             ",
+        "   Mc,,,,fM             ",
+        "   M,,,,,,M             ",
+        "   M000000M             ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        " /////////              ",
+        "                        "
+      ],
+      "terrain": { 
+      ",": "t_thconc_floor",
+      "f": "t_thconc_floor",
+      "t": "t_thconc_floor",
+      "c": "t_thconc_floor",
+      "M": "t_strconc_wall",
+      "+": "t_door_metal_c",
+      "0": "t_ballistic_glass",
+      "/": "t_open_air",
+      ">": "t_stairs_down",
+      "<": "t_stairs_up"
+       },
+       "furniture": {
+      "t": "f_desk",
+      "c": "f_chair",
+      "f": "f_filing_cabinet"
+        },
+        "items": {
+        "f": { "item": "SUS_office_filing_cabinet" },
+        "t": { "item": "SUS_office_desk", "chance": 75 }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "//":"A货架为弹药，B货架为爆炸物，C货架为武器箱，D货架为装备架，E货架焊接工具",
+    "om_terrain": ["lmb_mil_bunker_z-2"],
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "|||||||||||||||||||:::::",
+        "|<<|      |   |&&&|:::::",
+        "|  +      +   +   |:::::",
+        "||||      +   |||||:::::",
+        "|c +      +   1    :::::",
+        "|tt|      |        :::::",
+        "|00||  ||||        :::::",
+        "|       EE|        :::::",
+        "|         |        :::::",
+        "|@        |   |||||:::::",
+        "|/////////|   1    :::::",
+        "|/////////|        :::::",
+        "|/////////|        :::::",
+        "|/////////|        :::::",
+        "|/////////|        :::::",
+        "|/////////|   |||||:::::",
+        "|/////////|   1    :::::",
+        "|/////////|        :::::",
+        "|/////////|        :::::",
+        "|/////////|        :::::",
+        "|/////////|        :::::",
+        "|||||||||||||||||||:::::"
+      ],
+      "terrain": { 
+      ":": "t_soil",
+      "|": "t_strconc_wall",
+      "d": "t_door_metal_locked",
+      "+": "t_door_metal_c",
+      "<": "t_stairs_up",
+      "m": "t_card_military",
+      "@": "t_elevator_control",
+      "/": "t_elevator",
+      "0": "t_ballistic_glass"
+        },
+      "furniture": {
+      "t": "f_desk",
+      "&": "f_generator_broken",
+      "c": "f_chair",
+      "A": "f_warehouse_shelf",
+      "B": "f_warehouse_shelf",
+      "C": "f_warehouse_shelf",
+      "D": "f_warehouse_shelf",
+      "E": "f_warehouse_shelf"
+        },
+      "items": {
+        "E": { "item": "SUS_welding_gear", "repeat": [ 2, 6 ] },
+        "C": { "item": "lmb_mil_bunker_gunbox", "repeat": [ 3, 6 ] }
+      },
+        "place_monsters": [
+        { "monster": "GROUP_MIL_BASE", "density": 0.2, "x": 5, "y": 8 },
+        { "monster": "GROUP_MIL_STRONG", "density": 0.2, "x": 10, "y": 13 }
+      ],
+      "place_monster":[
+        { "monster": "mon_zombie_armored", "x":12 , "y": 16 },{ "monster": "mon_zombie_armored", "x":14 , "y": 16 }
+      ],
+      "place_vehicles": [
+        { "vehicle": "military_vehicles", "x": 4, "y": 17, "rotation": 270, "chance": 100, "fuel": 10, "status": 1 }
+        ],
+        "nested": {
+        "1": { "chunks": [ [ "lmb_mil_bunker_a", 45 ], [ "lmb_mil_bunker_b", 45 ],[ "lmb_mil_bunker_c", 10 ] ] }
+      }
+    }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lmb_mil_bunker",
+    "name": "军事掩体",
+    "sym": "B",
+    "color": "red",
+    "vision_levels": "isolated_building",
+    "see_cost": "full_high",
+    "flags": [ "KNOWN_DOWN", "RISK_EXTREME", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lmb_mil_bunker_road",
+    "name": "军事掩体",
+    "sym": "B",
+    "color": "red",
+    "vision_levels": "isolated_building",
+    "see_cost": "full_high",
+    "flags": [ "KNOWN_DOWN", "RISK_EXTREME", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lmb_mil_bunker_z1",
+    "name": "军事掩体",
+    "sym": "B",
+    "color": "red",
+    "vision_levels": "isolated_building",
+    "see_cost": "full_high",
+    "flags": [ "RISK_EXTREME", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lmb_mil_bunker_z2",
+    "name": "军事掩体",
+    "sym": "B",
+    "color": "red",
+    "vision_levels": "isolated_building",
+    "see_cost": "full_high",
+    "flags": [ "RISK_EXTREME", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lmb_mil_bunker_z-1",
+    "name": "军事掩体",
+    "sym": "B",
+    "color": "red",
+    "vision_levels": "isolated_building",
+    "see_cost": "full_high",
+    "flags": [ "KNOWN_DOWN", "RISK_EXTREME", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lmb_mil_bunker_z-2",
+    "name": "军事掩体",
+    "sym": "B",
+    "color": "red",
+    "vision_levels": "isolated_building",
+    "see_cost": "full_high",
+    "flags": [ "RISK_EXTREME", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "lmb_mil_Bunker",
+    "overmaps": [
+      { "point": [ 0, 2, 0 ], "locations": [ "land", "road" ] },
+      { "point": [ 0, 1, 0 ], "overmap": "lmb_mil_bunker_road_north" },
+      { "point": [ 0, 0, 0 ], "overmap": "lmb_mil_bunker_north" },
+      { "point": [ 0, 0, -2 ], "overmap": "lmb_mil_bunker_z-2_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "lmb_mil_bunker_z-1_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "lmb_mil_bunker_z1_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "lmb_mil_bunker_z2_north" }
+    ],
+    "connections": [ { "point": [ 0, 2, 0 ], "terrain": "road", "connection": "local_road", "from": [ 0, 1, 0 ] } ],
+    "locations": [ "forest" ],
+    "city_distance": [ 5, 20 ],
+    "occurrences": [ 20, 100 ],
+    "flags": [ "MILITARY", "OVERMAP_UNIQUE" ]
+  },
+  {
+        "id": "lmb_mil_bunker_gunbox",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"item":"ar_gunbox_usarmy"},
+         {"item":"sg_gunbox_usarmy"},
+         {"item":"rf_gunbox_usarmy"},
+         {"item":"smg_gunbox_usarmy"},
+         {"item":"mg_gunbox_usarmy"},
+         {"item":"ar_gunbox_marine"}
+              ]
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "lmb_mil_bunker_a",
+    "//":"a组为弹药，枪，爆炸物为一体的仓库",
+    "//2":"A货架为弹药，B货架为爆炸物，C货架为武器箱",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        "|A.A|",
+        "|A.A|",
+        "d...|",
+        "mB.C|",
+        "|B.C|"
+      ],
+      "terrain": {
+      ".": "t_thconc_floor",
+      "d": "t_door_metal_locked",
+      "m": "t_card_military",
+      "|": "t_strconc_wall"
+    },
+      "furniture": { 
+      "A": "f_warehouse_shelf",
+      "B": "f_warehouse_shelf",
+      "C": "f_warehouse_shelf"
+        },
+      "items": {
+        "A": { "item": "milspec_arsenal_group_only_ammo", "repeat": [ 2, 3 ] },
+        "B": [
+          { "item": "c4_box_part", "repeat": [ 1, 2 ] },
+          { "item": "grenade_can_pa120_grenades_full", "repeat": [ 1, 2 ] }
+        ],
+        "C": { "item": "lmb_mil_bunker_gunbox", "repeat": [ 3, 6 ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "lmb_mil_bunker_b",
+    "//":"b组为弹药,枪,爆炸物,装备为一体的仓库",
+    "//2":"A货架为弹药，B货架为爆炸物，C货架为武器箱，D货架为装备架",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        "|A.D|",
+        "|A.D|",
+        "d...|",
+        "mB.C|",
+        "|B.C|"
+      ],
+      "terrain": {
+      ".": "t_thconc_floor",
+      "d": "t_door_metal_locked",
+      "m": "t_card_military",
+      "|": "t_strconc_wall"
+    },
+      "furniture": { 
+      "A": "f_warehouse_shelf",
+      "B": "f_warehouse_shelf",
+      "C": "f_warehouse_shelf",
+      "D": "f_warehouse_shelf"
+        },
+        "items": {
+        "A": { "item": "milspec_arsenal_group_only_ammo", "repeat": [ 2, 3 ] },
+        "B": [
+          { "item": "c4_box_part", "repeat": [ 1, 2 ] },
+          { "item": "grenade_can_pa120_grenades_full", "repeat": [ 1, 2 ] }
+        ],
+        "C": { "item": "lmb_mil_bunker_gunbox", "repeat": [ 3, 6 ] },
+        "D": { "item": "arsenal_mics_group", "repeat": [ 2, 4 ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "lmb_mil_bunker_c",
+    "//":"b组为弹药,枪,爆炸物,重武器为一体的仓库",
+    "//2":"A货架为弹药，B货架为爆炸物，F货架为重武器",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        "|A.A|",
+        "|A.A|",
+        "d...|",
+        "mB.F|",
+        "|B.F|"
+      ],
+      "terrain": {
+      ".": "t_thconc_floor",
+      "d": "t_door_metal_locked",
+      "m": "t_card_military",
+      "|": "t_strconc_wall"
+    },
+      "furniture": { 
+      "A": "f_warehouse_shelf",
+      "B": "f_warehouse_shelf",
+      "F": "f_warehouse_shelf"
+        },
+        "items": {
+        "A": { "item": "milspec_arsenal_group_only_ammo", "repeat": [ 2, 3 ] },
+        "B": [
+          { "item": "c4_box_part", "repeat": [ 1, 2 ] },
+          { "item": "grenade_can_pa120_grenades_full", "repeat": [ 1, 2 ] }
+        ],
+        "F": { "item": "launchers", "repeat": [ 2, 4 ] }
+      }
+    }
+  }
+  ]

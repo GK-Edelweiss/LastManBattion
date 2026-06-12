@@ -1,0 +1,67 @@
+[
+        {
+    "id": "lmb_mon_turret",
+    "type": "MONSTER",
+    "name": { "str_sp": "Crows II 型加固型全自动武器站" },
+    "looks_like": "mon_crows_m240",
+    "description": "一台被用于LMB驻地防御的Crows II 型全自动武器站,装备着高清摄像头,探照灯和一个7.62×51的武器。这个武器站额外加了许些装甲板，能够防御小口径步枪弹的攻击。",
+    "default_faction": "military",
+    "species": [ "ROBOT" ],
+    "diff": 40,
+    "volume": "127500 ml",
+    "weight": "350 kg",
+    "hp": 100,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "vision_day": 45,
+    "vision_night": 10,
+    "weakpoint_sets": [ "wps_turret" ],
+    "revert_to_itype": "bot_crows_m240",
+    "starting_ammo": { "762_51": 500 },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 100,
+        "gun_type": "mosters_m60e4",
+        "ammo_type": "762_51",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "fake_dex": 12,
+        "ranges": [  [ 0, 50, "DEFAULT" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "target_moving_vehicles": true,
+        "laser_lock": true,
+        "targeting_cost": 200,
+        "targeting_timeout_extend": -10,
+        "targeting_sound": "\"Hostile detected.\"",
+        "targeting_volume": 50,
+        "no_ammo_sound": "a chk!"
+      },
+      [ "SEARCHLIGHT", 1 ]
+    ],
+    "special_when_hit": [ "RETURN_FIRE", 100 ],
+    "death_drops": "lmb_robot_m240",
+    "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "<color_light_green>自动炮台安静了下来！"
+  },
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRONIC",
+      "BIOLOGICALPROOF",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE",
+      "DROPS_AMMO",
+      "CONSOLE_DESPAWN",
+      "ID_CARD_DESPAWN"
+    ],
+    "armor": { "bash": 30, "cut": 35, "bullet": 45, "stab": 40 }
+  }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "//":"LMB掩体军火库物品组",
+             "type":"item_group",
+            "id":"lmb_bunker_item",
+            "subtype":"distribution",
+            "items":[
+            {"group":"grenade_can_pa120_grenades_full","prob":50},
+            {"group":"milspec_arsenal_group_only_ammo","prob":150},
+            {"group":"milspec_arsenal_group_only_guns","prob":80},
+            {"group":"arsenal_mics_group","prob":80},
+            {"group": "c4_box_part", "prob": 20 }
+            ]
+        },
+        {
+            "//":"JTF掩体医疗区锁柜",
+                 "type":"item_group",
+                "id":"lmb_jtf_medical",
+                "subtype":"collection",
+                "entries":[
+                    { "item": "bandages", "prob": 90, "count": [ 20, 60 ] },
+                    { "group": "adhesive_bandages_box_full", "prob": 30, "count": [ 10, 30 ] },
+                    { "item": "medical_gauze","prob": 50, "count": [ 20, 60 ] },
+                    { "group": "medical_tape_roll","prob": 50, "count": [ 20, 60 ] },
+                    { "group": "mil_base_iv", "prob": 50, "count": [ 20, 80 ] },
+                    { "item": "eyedrops", "prob": 50, "count": [ 20, 60 ] },
+                    { "item": "steroid_eyedrops",  "prob": 50, "count": [ 20, 60 ] },
+                    { "item": "anesthetic_kit","prob": 50, "count": [ 1, 10 ]},
+                    { "item": "disinfectant","prob": 50, "count": [ 20, 60 ] },
+                    { "group": "quikclot_bag_plastic_6","prob": 50, "count": [ 20, 60 ] },
+                    { "group": "bfipowder_bottle_plastic_small_4", "prob": 50, "count": [ 20, 60 ] },
+                    { "group": "cotton_ball_bag_full","prob": 50, "count": [ 2, 6 ] }
+                ]
+            }]

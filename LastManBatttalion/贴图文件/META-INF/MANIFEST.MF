@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.5.0
+
+Name: Monsters.png
+SHA1-Digest: LvgD8CkHJBMDhT4G38BgQRxr+0o=
+

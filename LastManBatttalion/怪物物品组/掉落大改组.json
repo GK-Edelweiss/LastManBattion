@@ -1,0 +1,182 @@
+[
+{
+"//":"步兵掉落组",
+     "type":"item_group",
+	"id":"lmb_rifleman_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"group":"lmb_helmet"},
+	{"item":"goggles_nv","charges":[0,100],"prob":5},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"group":"lmb_hg"},
+	{"group":"lmb_knife"},
+	{"group":"lmb_rifle_vest"},
+	{"group":"lmb_ballistic_half_vest"},
+	{"group":"lmb_pack_rifleman","prob":50},
+	{"group": "any_MRE", "count": [ 1, 3 ], "prob": 50 },
+	{"group":"lmb_loot_box","prob":30},
+	{"group":"lmb_gun_p416"}
+	]
+},
+{
+"//":"巡逻步兵掉落组",
+     "type":"item_group",
+	"id":"lmb_new_rifleman_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military","damage": [ 0, 2 ]},
+	{"group":"lmb_helmet"},
+	{"item":"elbow_pads","prob":70},
+	{"item":"knee_pads","prob":70},
+	{"group":"lmb_hg","prob":50},
+	{"group":"lmb_knife","prob":90},
+	{"group":"lmb_rifle_vest_1"},
+	{"group":"lmb_ballistic_half_vest"},
+	{"group":"lmb_pack_rifleman","prob":20},
+	{ "group": "any_MRE", "count": [ 1, 3 ], "prob": 10 },
+	{"group":"lmb_ammo_box","count":[1,2],"prob":30},
+	{"group":"lmb_gun_p416_1"}
+	]
+},
+{
+"//":"任务巡逻步兵队长掉落组",
+     "type":"item_group",
+	"id":"lmb_mission_rifleman_1_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military","damage": [ 0, 1 ]},
+	{"group":"lmb_helmet"},
+	{"item":"elbow_pads","prob":70},
+	{"item":"knee_pads","prob":70},
+	{"item":"lmb_mission_item_1"},
+	{"group":"lmb_hg","prob":50},
+	{"group":"lmb_knife","prob":90},
+	{"group":"lmb_rifle_vest_1"},
+	{"group":"lmb_ballistic_half_vest"},
+	{"group":"lmb_pack_rifleman","prob":20},
+	{ "group": "any_MRE", "count": [ 1, 3 ], "prob": 50 },
+	{"group":"lmb_gun_p416"}
+	]
+},
+{
+"//":"投掷者掉落组",
+     "type":"item_group",
+	"id":"lmb_grenadier_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"group":"lmb_helmet"},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"item":"glasses_bal"},
+	{"group":"lmb_hg"},
+	{"group":"lmb_knife"},
+	{"group":"lmb_ballistic_heavy_vest"},
+	{"group":"lmb_gun_mgl"}
+	]
+},
+{
+"//":"斥候掉落组",
+     "type":"item_group",
+	"id":"lmb_scout_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"group":"lmb_hg","prob":70},
+	{"group":"lmb_knife","prob":90},
+	{"group":"lmb_scout_vest"},
+	{ "item":"two_way_radio","charges":[1,100] },
+    { "item":"binoculars","prob":60 },
+    { "item":"satellitemap","prob":30 },
+	{"item":"mp5mag","ammo-item":"9mmP","charges":[20,30],"count":[1,2]},
+	{"group":"lmb_gun_mp5"}
+	]
+},
+{
+"//":"突击兵掉落组",
+     "type":"item_group",
+	"id":"lmb_assault_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"item":"two_way_radio","charges":[1,100]},
+	{"item":"flashbang","count":[1,3],"prob":50},
+	{"item":"gasbomb","count":[1,3],"prob":50},
+	{"group":"lmb_hg","prob":70},
+	{"group":"lmb_knife","prob":90},
+	{"group":"lmb_assault_vest"},
+	{"item":"saiga10mag","ammo-item":"shot_slug","charges":[5,10],"count":[1,2]},
+	{"group":"lmb_gun_s12"}
+	]
+},
+{
+"//":"狙击手掉落组",
+     "type":"item_group",
+	"id":"lmb_sniper_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"item":"cloak"},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"item":"srsmag","count":[1,2]},
+	{"item":"two_way_radio","charges":[1,100]},
+	{"group":"lmb_hg","prob":70},
+	{"group":"lmb_knife","prob":90},
+	{"group":"lmb_sniper_vest"},
+	{ "group": "any_MRE", "count": [ 1, 2 ], "prob": 50 },
+	{"group":"lmb_gun_srs"},
+	{
+		"item":"srsmag",
+		"ammo-item":"762_51",
+		"charges":[5,10],
+		"count":[1,2]
+	  }
+	]
+},
+{
+"//":"工程师掉落组",
+     "type":"item_group",
+	"id":"lmb_engineer_dd",
+	"magazine": 100,
+	"ammo": 100,
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"item":"hat_navy"},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"group":"lmb_hg"},
+	{"group":"lmb_knife"},
+	{"group":"lmb_engineer_vest"},
+	{"group":"lmb_ballistic_half_vest"},
+	{"group":"lmb_pack_engineer","prob":50},
+	{ "group": "any_MRE", "count": [ 1, 3 ] },
+	{"group":"lmb_gun_870"},
+	{
+		"item":"shot_00",
+		"count":[2,4]
+	  }
+	]
+}
+]
