@@ -1,0 +1,64 @@
+[
+    {
+        "id": "6.8mm",
+        "type": "ITEM",
+        "subtypes": [ "AMMO" ],
+        "name": { "str_sp": "6.8x51mm SIG FMJ" },
+        "description": "民用6.8x51毫米（.277 FURY）全金属被甲弹。",
+        "weight": "18 g",
+        "volume": "158 ml",
+        "longest_side": "71 mm",
+        "price": "5USD",
+        "price_postapoc": "15USD",
+        "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+        "material": [ "brass", "lead", "powder" ],
+        "symbol": "=",
+        "color": "yellow",
+        "count": 40,
+        "stack_size": 40,
+        "ammo_type": "6.8mm_type",
+        "range": 75,
+        "damage": {
+          "damage_type": "bullet",
+          "amount": 64,
+          "armor_penetration": 10
+        },
+        "dispersion": 35,
+        "recoil": 3500,
+        "effects": [ "COOKOFF" ]
+      },
+      {
+        "id": "6.8hybrid",
+        "type": "ITEM",
+        "subtypes": [ "AMMO" ],
+        "name": { "str_sp": "6.8x51mm SIG Hybrid" },
+        "description": "军规6.8x51毫米（.277 FURY）步枪弹，拥有双重金属外壳（不锈钢与黄铜）。提供比5.56x45弹药更高的初速度和更多动能，同时比7.62x51具有更强的打击力，还能有效穿透现代防弹护甲。",
+        "weight": "24 g",
+        "volume": "158 ml",
+        "longest_side": "71 mm",
+        "price": "5USD",
+        "price_postapoc": "15USD",
+        "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+        "material": [ "brass", "lead", "powder" ],
+        "symbol": "=",
+        "color": "yellow",
+        "count": 40,
+        "stack_size": 40,
+        "ammo_type": "6.8mm_type",
+        "range": 75,
+        "damage": {
+          "damage_type": "bullet",
+          "amount": 68,
+          "armor_penetration": 12
+        },
+        "dispersion": 35,
+        "recoil": 3500,
+        "effects": [ "COOKOFF" ]
+      },
+      {
+        "id": "6.8mm_type",
+        "name": "6.8mm全威力弹",
+        "default": "6.8mm",
+        "type": "ammunition_type"
+      }
+]

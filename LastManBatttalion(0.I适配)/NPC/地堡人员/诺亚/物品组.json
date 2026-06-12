@@ -1,0 +1,38 @@
+[{
+    "type": "item_group",
+    "id": "noa_worn",
+    "subtype": "collection",
+    "entries": [
+      {"item": "stockings"},
+      {"item": "dress_shoes"},
+      {"item": "skirt"},
+      {"item": "panties"},
+      {"item": "longshirt"},
+      {"item": "jacket_light" }
+    ]
+  },
+  {
+    "id": "noa_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 100,
+    "entries": [
+      {
+         "item": "p320mag_13rd_357sig",
+         "ammo-item": "357sig_jhp",
+         "count": 4
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "noa_weapon",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 100,
+    "entries": [
+      {"item": "p320_flux"}
+    ]
+  }
+  ]

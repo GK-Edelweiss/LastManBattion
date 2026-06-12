@@ -1,0 +1,110 @@
+[
+{
+    "id": "lmb_pack_rifleman",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"molle_pack",
+		"contents-group":"lmb_pack_rifleman_group"
+	}
+          ]
+},
+{
+    "id": "lmb_pack_rifleman_group",
+    "type": "item_group",
+    "subtype": "collection",
+	"magazine": 100,
+    "ammo": 100,
+    "entries": [
+	{"item":"glowstick","count":[3,5],"prob":50},
+	{"item":"handflare","count":[1,2],"prob":50},
+	{"group":"lmb_ammo_box","count":[1,3],"prob":90},
+	{"item":"binoculars","prob":10},
+	{"item":"rollmat","prob":20}
+]
+},
+{
+    "id": "lmb_pack_engineer",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"backpack_tactical_large",
+		"contents-group":"lmb_pack_engineer_group"
+	}
+          ]
+},
+{
+    "id": "lmb_pack_engineer_group",
+    "type": "item_group",
+    "subtype": "collection",
+	"magazine": 100,
+    "ammo": 100,
+    "entries": [
+	{"item":"glowstick","count":[3,5],"prob":50},
+	{"item":"handflare","count":[1,2],"prob":50},
+	{"item":"hammer_sledge_engineer","prob":50},
+	{"item":"xacto","prob":50},
+	{"item":"multitool","prob":50},
+	{"item":"pliers_locking","prob":50},
+	{"item":"hacksaw","prob":50},
+	{"item":"soldering_iron","prob":40},
+	{"item":"welder","prob":40},
+	{"group":"lmb_battery","count":[3,5]},
+	{"item":"rollmat","prob":20}
+]
+},
+{
+"//":"电池组",
+     "type":"item_group",
+	"id":"lmb_battery",
+	"subtype":"distribution",
+	"items":[
+	{"item":"light_minus_battery_cell","prob":45},
+	{"item":"light_battery_cell","prob":23},
+	{"item":"medium_battery_cell","prob":12},
+	{"item":"heavy_battery_cell","prob":8},
+	{"item":"null","prob":10},
+	{"group":"lmb_battery_1","prob":2}
+	]
+},
+{
+"//":"核电池组",
+     "type":"item_group",
+	"id":"lmb_battery",
+	"subtype":"distribution",
+	"items":[
+	{"item":"light_minus_atomic_battery_cell","prob":40},
+	{"item":"light_atomic_battery_cell","prob":30},
+	{"item":"medium_atomic_battery_cell","prob":20},
+	{"item":"heavy_atomic_battery_cell","prob":10}
+	]
+},
+{
+	"//":"弹药盒组",
+	"type":"item_group",
+	"id":"lmb_ammo_box",
+	"subtype":"distribution",
+	"entries":[
+	{"item":"LMB_ammo_box_556","prob":35},
+	{"item":"LMB_ammo_box_556_1","prob":20},
+	{"item":"LMB_ammo_box_556_2","prob":20},
+	{"item":"LMB_ammo_box_556_3","prob":15},
+	{"item":"LMB_ammo_box_762","prob":10}
+	]
+},
+{
+	"//":"幸运掉落物组",
+	"type":"item_group",
+	"id":"lmb_loot_box",
+	"subtype":"distribution",
+	"entries":[
+	{"item":"lmb_loot_item_1","prob":5},
+	{"item":"lmb_loot_item_2","prob":10},
+	{"item":"lmb_loot_item_3","prob":14},
+	{"item":"lmb_loot_item_4","prob":20},
+	{"item":"lmb_loot_item_5","prob":41}
+	]
+}
+]

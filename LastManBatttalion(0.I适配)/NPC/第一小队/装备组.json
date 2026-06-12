@@ -1,0 +1,259 @@
+[{
+    "type": "item_group",
+    "id": "akayo_worn",
+    "subtype": "collection",
+    "entries": [
+      {"item": "bra"},
+      {"item": "combat_shirt"},
+      {"item": "ballistic_vest_esapi",
+      "contents-group":"lmb_akayo_esapi"},
+      {"item": "boy_shorts"},
+      {"item": "pants_tactical"},
+      {"item": "powered_earmuffs"},
+      {"item": "socks"},
+      {"item": "molle_pack"},
+      {"item": "bootsheath"}
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "edelweiss_worn",
+    "subtype": "collection",
+    "entries": [
+      {"item": "bra"},
+      {"item": "combat_shirt"},
+      {"item": "ballistic_vest_esapi",
+      "contents-group":"lmb_akayo_esapi"},
+      {"item": "boy_shorts"},
+      {"item": "pants_tactical"},
+      {"item": "powered_earmuffs"},
+      {"item": "socks"},
+      {"item": "molle_pack"},
+      {"item": "bootsheath"},
+      {"group":"edelweiss_tac338"}
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "vxxxl_worn",
+    "subtype": "collection",
+    "entries": [
+      {"item": "bra"},
+      {"item": "combat_shirt"},
+      {"item": "ballistic_vest_esapi",
+      "contents-group":"lmb_akayo_esapi"},
+      {"item": "boy_shorts"},
+      {"item": "pants_tactical"},
+      {"item": "powered_earmuffs"},
+      {"item": "socks"},
+      {"item": "molle_pack"},
+      {"item": "bootsheath"}
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "hans_worn",
+    "subtype": "collection",
+    "entries": [
+      {"item": "bra"},
+      {"item": "combat_shirt"},
+      {"item": "ballistic_vest_esapi",
+      "contents-group":"lmb_akayo_esapi"},
+      {"item": "boy_shorts"},
+      {"item": "pants_tactical"},
+      {"item": "powered_earmuffs"},
+      {"item": "socks"},
+      {"item": "molle_pack"},
+      {"item": "bootsheath"}
+    ]
+  },
+  {
+    "id": "lmb_akayo_esapi",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {"item":"esapi_plate","count":2},
+      {"item":"esbi_plate","count":2},
+      {"item":"radio_pouch","contents-item":"two_way_radio"},
+    {"item":"triple_stacker_pouch"},
+	{"item":"gadget_pouch"}
+          ]
+},
+{
+  "id": "akayo_carry",
+  "type": "item_group",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {
+       "item": "xm7mag",
+       "count": 10
+    },
+    {
+      "item": "militarymap"
+   }
+  ]
+},{
+  "id": "edelweiss_carry",
+  "type": "item_group",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {
+      "item": "stanag30",
+      "ammo-item": "300blk",
+      "count": 8
+    },
+    {
+      "item": "stanag100drum",
+      "ammo-item": "300blk",
+      "count": 2
+    },
+    {
+      "item": "ai_338mag_10",
+      "ammo-item": "338lapua_hpbt",
+      "count": 5
+    },
+    {
+      "item": "militarymap"
+   }
+  ]
+},
+{
+  "id": "vxxxl_carry",
+  "type": "item_group",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {
+      "item": "stanag30",
+      "ammo-item": "300blk",
+      "count": 10
+    },
+    {
+      "item": "militarymap"
+   }
+  ]
+},
+{
+  "id": "hans_carry",
+  "type": "item_group",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {
+      "item": "akmag30",
+      "ammo-item": "762_jhp",
+      "count": 4
+    },
+    {
+      "item": "akmag40",
+      "ammo-item": "762_jhp",
+      "count": 4
+    },
+    {
+      "item": "akdrum75",
+      "ammo-item": "762_jhp",
+      "count": 1
+    },
+    {
+      "item": "militarymap"
+   }
+  ]
+},
+{
+  "type": "item_group",
+  "id": "akayo_weapon",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {"item": "XM7",
+    "contents-item": [
+      "shoulder_strap",
+      "grip",
+      "holo_sight",
+      "xm7_suppressor",
+      "butt_hook",
+      "rail_laser_sight"
+    ]}
+  ]
+},
+{
+  "type": "item_group",
+  "id": "edelweiss_weapon",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {"item": "modular_m27_assault_rifle",
+    "contents-item": [
+      "shoulder_strap",
+      "retool_ar15_300blk",
+      "grip",
+      "holo_sight",
+      "holo_magnifier",
+      "butt_hook",
+      "suppressor",
+      "rail_laser_sight"
+    ]}
+  ]
+},
+{
+  "type": "item_group",
+  "id": "edelweiss_tac338",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {"item": "tac338",
+    "contents-item": [
+      "shoulder_strap",
+      "high_end_folding_stock",
+      "suppressor",
+      "rifle_scope_high_end_mount",
+      "bipod_handguard",
+      "cheek_pad",
+      "butt_hook"
+    ]}
+  ]
+},
+{
+  "type": "item_group",
+  "id": "vxxxl_weapon",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {"item": "sig_mcx_rattler_sbr",
+    "contents-item": [
+      "shoulder_strap",
+      "grip",
+      "holo_sight",
+      "suppressor",
+      "rail_laser_sight"
+    ]}
+  ]
+},
+{
+  "type": "item_group",
+  "id": "hans_weapon",
+  "subtype": "collection",
+  "magazine": 100,
+  "ammo": 100,
+  "entries": [
+    {"item": "mk47",
+    "contents-item": [
+      "holo_sight",
+      "holo_magnifier",
+      "butt_hook",
+      "cheek_pad",
+      "suppressor",
+      "rail_laser_sight"
+    ]}
+  ]
+} ]

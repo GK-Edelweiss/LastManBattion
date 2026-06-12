@@ -1,0 +1,372 @@
+[
+    {
+    "id": "ar_gunbox_usarmy",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str_sp": "步枪武器箱(军用)" },
+    "description": "一个装有一把美国陆军所使用的公发步枪,配套的弹匣以及弹药的武器收纳箱.激活以将其拆开.可获得武器有:M4A1 步枪,M16A4 步枪,MK18 CQBR 突击步枪.",
+    "weight": "7000 g",
+    "volume": "10000 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "looks_like": "box_longarm",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "lmb_mil_ar_box" }
+  },
+  {
+        "id": "lmb_mil_ar_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"group":"lmb_mil_ar_box_m4"},
+         {"group":"lmb_mil_ar_box_m16a4"},
+         {"group":"lmb_mil_ar_box_m4cqbr"}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m4",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"group":"modular_m4a1"},
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m16a4",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"modular_m16a4"},
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m4cqbr",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"group":"m4_cqbr"},
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  },
+  {
+    "id": "sg_gunbox_usarmy",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str_sp": "霰弹枪武器箱(军用)" },
+    "description": "一个装有一把美国陆军所使用的公发霰弹枪以及弹药的武器收纳箱.激活以将其拆开.可获得武器有:M1014 三军联合作战霰弹枪,M590A1 莫斯伯格霰弹枪.",
+    "weight": "7000 g",
+    "volume": "10000 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "looks_like": "box_longarm",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "lmb_mil_sg_box" }
+  },
+  {
+        "id": "lmb_mil_sg_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"group":"lmb_mil_sg_box_m1014"},
+         {"group":"lmb_mil_sg_box_m590a1"}
+              ]
+  },
+  {
+        "id": "lmb_mil_sg_box_m1014",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m1014"},
+         {"group":"boxed_12_25","count":2}
+              ]
+  },
+  {
+        "id": "lmb_mil_sg_box_m590a1",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"mossberg_590"},
+         {"group":"boxed_12_25","count":2}
+              ]
+  },
+  {
+    "id": "rf_gunbox_usarmy",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str_sp": "狙击步枪武器箱(军用)" },
+    "description": "一个装有一把美国陆军所使用的公发狙击步枪,配套的弹匣以及弹药的武器收纳箱.激活以将其拆开.可获得武器有:M110A1 狙击步枪,M24 狙击步枪,M14-EBR 狙击步枪,M2010 狙击步枪.",
+    "weight": "7000 g",
+    "volume": "10000 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "looks_like": "box_longarm",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "lmb_mil_rf_box"}
+  },
+  {
+        "id": "lmb_mil_rf_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"group":"lmb_mil_rf_box_m110a1"},
+         {"group":"lmb_mil_rf_box_m24"},
+         {"group":"lmb_mil_rf_box_m14ebr"},
+         {"group":"lmb_mil_rf_box_m2010"}
+              ]
+  },
+  {
+        "id": "lmb_mil_rf_box_m110a1",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m110a1"},
+         {"item":"hk417mag_20rd","count":2},
+         {"group":"boxed_308_20","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_rf_box_m24",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"M24"},
+         {"group":"boxed_308_20","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_rf_box_m14ebr",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m14ebr"},
+         {"item":"m14mag","count":2},
+         {"group":"boxed_308_20","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_rf_box_m2010",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m2010"},
+         {"item":"m2010mag","count":4},
+         {"group":"boxed_308_20","count":3}
+              ]
+  },
+  {
+    "id": "smg_gunbox_usarmy",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str_sp": "冲锋枪武器箱(军用)" },
+    "description": "一个装有一把美国陆军所使用的公发冲锋枪,配套的弹匣以及弹药的武器收纳箱.激活以将其拆开.可获得武器有:APC9 冲锋枪,MP5 冲锋枪.",
+    "weight": "7000 g",
+    "volume": "10000 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "looks_like": "box_longarm",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "lmb_mil_smg_box"}
+  },
+  {
+        "id": "lmb_mil_smg_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"group":"lmb_mil_smg_box_apc9"},
+         {"group":"lmb_mil_smg_box_mp5"}
+              ]
+  },
+  {
+        "id": "lmb_mil_smg_box_apc9",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"bt_apc9k"},
+         {"item":"btmp9mag_9x19mm_30","count":3},
+         {"group":"boxed_9mm_100","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_smg_box_mp5",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"hk_mp5"},
+         {"item":"mp5mag","count":3},
+         {"group":"boxed_9mm_100","count":3}
+              ]
+  },
+  {
+    "id": "mg_gunbox_usarmy",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str_sp": "通用机枪武器箱(军用)" },
+    "description": "一个装有一把美国陆军所使用的公发通用机枪,配套的弹匣以及弹药的武器收纳箱.激活以将其拆开.可获得武器有:M249 轻机枪,M240 轻机枪,M60E4 通用机枪.",
+    "weight": "14000 g",
+    "volume": "15000 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "looks_like": "box_longarm",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "lmb_mil_mg_box"}
+  },
+  {
+        "id": "lmb_mil_mg_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"group":"lmb_mil_mg_box_m249"},
+         {"group":"lmb_mil_mg_box_m240"},
+         {"group":"lmb_mil_mg_box_m60e4"}
+              ]
+  },
+  {
+        "id": "lmb_mil_mg_box_m249",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m249"},
+         {"group":"boxed_223_500","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_mg_box_m240",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m240"},
+         {"group":"boxed_308_100","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_mg_box_m60e4",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"m60e4"},
+         {"group":"boxed_308_100","count":3}
+              ]
+  },
+  {
+    "id": "ar_gunbox_marine",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str_sp": "步枪武器箱(马润)" },
+    "description": "一个装有一把马润所使用的公发步枪,配套的弹匣以及弹药的武器收纳箱.激活以将其拆开.可获得武器有:M4A1 步枪,M16A4 步枪,M27 IAR 步枪,M38 精确射手步枪.",
+    "weight": "7000 g",
+    "volume": "10000 ml",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "[",
+    "looks_like": "box_longarm",
+    "color": "green",
+    "use_action": { "type": "unpack", "group": "lmb_marine_gun_box" }
+  },
+  {
+        "id": "lmb_marine_gun_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"group":"lmb_mil_ar_box_m4"},
+         {"group":"lmb_mil_ar_box_m16a4"},
+         {"group":"lmb_mil_ar_box_m27iar"},
+         {"group":"lmb_mil_ar_box_m38dmr"}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m4",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"group":"modular_m4a1"},
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m16a4",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"modular_m16a4"},
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m27iar",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {"item":"modular_m27_assault_rifle"},
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  },
+  {
+        "id": "lmb_mil_ar_box_m38dmr",
+        "type": "item_group",
+        "subtype": "collection",
+        "magazine": 100,
+        "ammo": 100,
+        "entries": [
+         {
+        "item": "modular_m27_assault_rifle",
+        "variant": "modular_m38dmr",
+        "contents-group": "m38dmr_mods"
+        },
+         {"item":"stanag30","count":3},
+         {"group":"boxed_223_50","count":3}
+              ]
+  }
+]

@@ -1,0 +1,139 @@
+[
+{
+    "type": "ITEM",
+    "subtypes": [ "GENERIC" ],
+    "category": "currency",
+    "id": "Phoenix",
+    "name": { "str_sp": "凤凰币" },
+    "description": "一枚硬币，上面的图案似乎是个橙色的凤凰在火焰之上。虽然是JTF内部人员交易用的，但似乎也能和其他人交易。",
+    "price": "50USD",
+    "price_postapoc": "80USD",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "to_hit": -3,
+    "color": "yellow",
+    "symbol": "$",
+    "material": [ "gold" ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "GENERIC" ],
+    "category": "currency",
+    "id": "Phoenix100",
+    "name": { "str_sp": "凤凰币同捆组" },
+    "description": "一整捆凤凰币，里面有着一百枚。",
+    "price": "5000USD",
+    "price_postapoc": "8000USD",
+    "weight": "50 g",
+    "volume": "50 ml",
+    "to_hit": -3,
+    "color": "yellow",
+    "symbol": "$",
+    "material": [ "gold" ]
+  },
+  {
+    "id": "lmb_mission_item_1",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str": "坠毁的直升机黑匣子" },
+    "description": "一个直升机的黑匣子，你需要带回的数据都在里边。不过你无法解析它，似乎JTF有着独特的技术能够解析这个东西。",
+    "weight": "4535 g",
+	  "volume": "2 L",
+	  "price": "0USD",
+	  "price_postapoc": "0USD",
+	  "to_hit": -1,
+	  "material": [
+    "steel"
+	],
+	"symbol": ";",
+	"color": "light_gray"
+  },
+  {
+    "id": "lmb_mission_item_2",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "name": { "str": "坠毁的无人机黑匣子" },
+    "description": "一个无人机的黑匣子，包含着一些侦查数据以及控制信息。你没法解析它，但是JTF有着能够解析的技术。",
+    "weight": "4535 g",
+	"volume": "2 L",
+	"price": "0USD",
+	"price_postapoc": "0USD",
+	"to_hit": -1,
+	"material": [
+    "steel"
+	],
+	"symbol": ";",
+	"color": "light_gray"
+  },
+  {
+    "abstract": "模板",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "//":"感谢调试员咖啡大佬所提供的模板(",
+    "name": {
+      "str": "magic seal base"
+    },
+    "material": [
+      "steel"
+    ],
+    "symbol": ",",
+    "weight": "50 g",
+    "volume": "250 ml",
+    "flags": [
+      "NO_SALVAGE",
+      "UNBREAKABLE_MELEE"
+    ]
+  },
+  {
+    "id": "new_ai_module",
+    "copy-from": "模板",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "name": "高级火控部件",
+    "description": "一个由SHD影子技术部门和16LAB研究所合作的成品，能够为部分枪械进行特殊改造升级。",
+    "price_postapoc": "5USD",
+    "color": "light_gray"
+  },
+  {
+    "id": "lmb_COFDM",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "looks_like":"power_supply",
+    "name": { 
+      "str_sp": "COFDM军用无线电"
+   },
+    "description": "双向对讲军用COFDM无线音视频数据信号传输器SG-C10。",
+    "weight": "2000 g",
+    "volume": "700 ml",
+    "price": "15000USD",
+    "price_postapoc": "1170USD",
+    "to_hit": -3,
+    "material": [
+    "plastic",
+      "steel"
+    ],
+    "symbol": ";",
+    "color": "black"
+  },
+  {
+    "id": "LMB_AES_BOOK",
+    "type": "ITEM",
+"subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "name": { "str_sp": "先进电子材料教材" },
+    "description": "一本关于先进电子材料和元器件的教材，制作微电子元件极其重要的稀缺手册。里面记载有GPS放大器和COFDM军用无线电的制作。",
+    "weight": "500 g",
+    "volume": "500 ml",
+    "price": "20000 USD",
+    "price_postapoc": "1000 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "blue",
+    "read_skill": "electronics",
+    "read_fun": -1,
+    "required_level": 2,
+    "intelligence": 8,
+    "time": "20 m",
+    "melee_damage": { "bash": 1 }
+  }
+  ]

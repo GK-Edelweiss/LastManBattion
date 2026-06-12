@@ -1,0 +1,111 @@
+[
+  {
+    "id": "LMB_squad_buff",
+    "type": "SPELL",
+    "name": { "str": "幸存者军队小队队长指挥" },
+    "description": "指挥其他幸存者军队士兵，加快他们的移速.",
+    "valid_targets": [ "self", "ally" ],
+    "targeted_monster_ids": [
+      "LMB_Rifleman",
+      "LMB_Grenadier",
+      "LMB_scout",
+      "LMB_Assault",
+      "LMB_Sniper",
+      "LMB_Engineer",
+      "LMB_Medic",
+      "LMB_Gunner",
+      "LMB_new_Rifleman"
+    ],
+    "flags": [ "NO_HANDS", "NO_LEGS" ],
+    "effect": "attack",
+    "effect_str": "LMB_squad",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "max_level": 1,
+    "min_aoe": 40,
+    "max_aoe": 40,
+    "min_range": 10,
+    "max_range": 10,
+    "min_duration": 500,
+    "max_duration": 500
+  },
+  {
+    "id": "LMB_media_spell",
+    "type": "SPELL",
+    "name": {
+      "str": "LMB医疗兵回复"
+    },
+    "description": "怪物法术，用于幸存者军队医疗兵回复生命",
+    "message": "LMB医疗兵正在使用绷带治疗他自己!",
+    "valid_targets": ["self"],
+    "targeted_monster_ids": ["LMB_Medic"],
+    "flags": [
+      "NO_HANDS",
+      "NO_LEGS"
+    ],
+    "effect_str": "NO_bleed",
+    "min_damage": -10,
+    "max_damage": -10,
+    "effect": "attack",
+    "shape": "blast",
+    "min_duration": 1,
+    "max_duration": 1
+  },
+  {
+    "id": "LMB_medic_aoe_hp",
+    "type": "SPELL",
+    "name": { "str": "幸存者军队军医AOE回血" },
+    "description": "正在使用便携式治疗站治疗队友.",
+    "valid_targets": [ "self", "ally" ],
+    "targeted_monster_ids": [
+      "LMB_Rifleman",
+      "LMB_Grenadier",
+      "LMB_scout",
+      "LMB_Assault",
+      "LMB_Sniper",
+      "LMB_Engineer",
+      "LMB_Medic",
+      "LMB_Gunner",
+      "LMB_new_Rifleman"
+    ],
+    "flags": [ "NO_HANDS", "NO_LEGS" ],
+    "effect": "attack",
+    "effect_str": "NO_bleed",
+    "energy_source": "MANA",
+    "shape": "blast",
+    "max_level": 1,
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "min_range": 10,
+    "max_range": 10,
+    "min_damage": -5,
+    "max_damage": -5,
+    "min_duration": 500,
+    "max_duration": 500
+  },
+  {
+    "id": "moster_spell_hp",
+    "type": "SPELL",
+    "name": {
+      "str": "怪物用医疗包"
+    },
+    "description": "怪物用法术，用于叛变特工和猎人回复自身生命",
+    "valid_targets": [
+      "self",
+      "ally"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "min_damage": -25,
+    "max_damage": -25,
+    "effect": "attack",
+    "effect_str": "NO_bleed",
+    "shape": "blast",
+    "min_duration": 1,
+    "max_duration": 1
+  }
+  ]

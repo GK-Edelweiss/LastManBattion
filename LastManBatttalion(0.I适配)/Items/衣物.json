@@ -1,0 +1,435 @@
+[
+{
+    "id": "JTF_esapi",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "looks_like":"ballistic_vest_esapi",
+    "copy-from":"ballistic_vest_esapi",
+    "name": { "str_sp": "JTF防弹背心" },
+    "description": "一件美军标准的防弹背心，唯一不同的是上面有部分地方被涂上绿色的漆料，印上了JTF的。"
+  },
+  {
+    "id": "shd_pants",
+    "repairs_like": "jeans",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "looks_like":"pants_army",
+    "name": { "str_sp": "特工长裤" },
+    "description": "一条国土战略局分发的长裤，在军用长裤的基础上做了改动以提升使用者在CBRN环境下的生存能力，在增加了不低防御力的同时减少了累赘。",
+    "weight": "720 g",
+    "volume": "2500 ml",
+    "price": "35USD",
+    "price_postapoc": "2USD",
+    "material": [ "nomex","kevlar_layered" ],
+    "symbol": "[",
+    "color": "green",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "165 mm",
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "165 mm",
+        "moves": 100
+      }
+    ],
+    "warmth": 25,
+    "material_thickness": 8,
+    "environmental_protection": 20,
+    "flags": [ "VARSIZE", "POCKETS","STURDY","WATERPROOF", "RAINPROOF", "GAS_PROOF", "RAD_PROOF" ],
+    "armor": [ { "encumbrance": [ 7, 15 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+  },
+  {
+    "id": "shd_jacket",
+    "repairs_like": "trenchcoat",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "looks_like":"jacket_army",
+    "name": { "str_sp": "特工夹克" },
+    "description": "一件国土战略局分发的标准衣物，在普通的军用夹克上做了改动以提升使用者的CBRN环境生存能力和战斗力，极大的增加了防护力的同时也减少了累赘。",
+    "weight": "780 g",
+    "volume": "3 L",
+    "price": "35USD",
+    "price_postapoc": "35USD",
+    "material": [ "nomex","kevlar_layered" ],
+    "symbol": "[",
+    "color": "green",
+    "armor": [
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 7, 10 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 7, 8 ] }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1200 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "1 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "13 cm",
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "1 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "13 cm",
+        "moves": 120
+      }
+    ],
+    "warmth": 25,
+    "material_thickness": 5,
+    "environmental_protection": 20,
+    "valid_mods": [ "steel_padded" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER","STURDY","WATERPROOF", "RAINPROOF", "GAS_PROOF",  "RAD_PROOF" ],
+    "use_action": [ { "type": "attach_molle", "size": 6 }, { "type": "detach_molle" } ]
+  },
+  {
+    "id": "shd_esapi",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "looks_like":"ballistic_vest_esapi",
+    "name": { "str_sp": "国土战略局特工防弹背心" },
+    "description": "一件国土战略局分发的标准防弹背心，在提供了不错的防御力的同时减少了累赘并且增加了存储空间。",
+    "weight": "2911 g",
+    "volume": "6 L",
+    "price": "1600USD",
+    "price_postapoc": "10USD",
+    "symbol": "[",
+    "material": [ "nylon", "kevlar_layered" ],
+    "color": "light_gray",
+    "warmth": 15,
+    "flags": [ "STURDY", "OUTER", "WATER_FRIENDLY" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "moves": 800,
+        "description": "Pocket for a large armor plate.",
+        "//": "Should fit a medium ESAPI plate snugly",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "moves": 800,
+        "description": "Pocket for a large armor plate.",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "21 cm",
+        "moves": 800,
+        "description": "Pocket for a medium armor plate.",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "21 cm",
+        "moves": 800,
+        "description": "Pocket for a medium armor plate.",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "1200 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "21 cm",
+        "moves": 800,
+        "description": "Attachment for shoulder protectors.",
+        "item_restriction": [ "iotv_shoulder_plate" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "21 cm",
+        "moves": 800,
+        "description": "Attachment for a groin protector.",
+        "item_restriction": [ "iotv_groin_plate" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.3,
+        "moves": 40,
+        "flag_restriction": [ "MAG_COMPACT" ]
+      }
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 3.0 },
+          { "type": "kevlar_layered", "covered_by_mat": 95, "thickness": 4.0,"ignore_sheet_thickness":true }
+        ],
+        "encumbrance": [ 4, 4 ],
+        "coverage": 100,
+        "cover_vitals": 100,
+        "covers": [ "torso" ]
+      }
+    ],
+    "use_action": [ { "type": "attach_molle", "size": 8 }, { "type": "detach_molle" } ]
+  },
+  {
+    "id": "shd_gloves",
+    "repairs_like": "gloves_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str_sp": "特工手套"},
+    "description": "一对国土战略局分发的标准手套，能够保暖提升武器抓握力以及提供一定的防御。",
+    "weight": "220 g",
+    "volume": "500 ml",
+    "price": "52USD",
+    "price_postapoc": "15USD",
+    "to_hit": 2,
+    "material": [ "kevlar", "leather" ],
+    "symbol": "[",
+    "looks_like": "fire_gauntlets",
+    "color": "dark_gray",
+    "warmth": 30,
+    "material_thickness": 5,
+    "environmental_protection": 5,
+    "flags": [ "VARSIZE", "STURDY" ],
+    "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+  },
+  {
+    "id": "shd_boots",
+    "repairs_like": "boots_survivor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "looks_like":"boots_combat",
+    "name": { "str_sp": "国土战略局战斗靴" },
+    "description": "一双国土战略局分发的标准战斗靴，能让穿戴者有着更好的抓地力和脚裸稳定性，不仅非常耐用而已还针对一些特殊情况增加了一些材料。",
+    "weight": "1060 g",
+    "volume": "2 L",
+    "price": "70USD",
+    "price_postapoc": "15USD",
+    "to_hit": -1,
+    "material": [ "kevlar", "leather", "rubber" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    
+    "warmth": 30,
+    "material_thickness": 5,
+    "environmental_protection": 15,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
+    "armor": [ { "encumbrance": 25, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+  },
+  {
+    "id": "lmb_lv119_bd",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "//": "孩子们，黑狐来了(暂未完成.",
+    "name": { "str_sp": "Spiritus Systems LV-119 插板胸挂 (黑色军团 V1)" },
+    "description": "一款支持高度定制的模块化插板胸挂，最大限度保证穿戴者在战斗中的舒适度，由Spiritus Systems公司设计制造。狼灰色版本。便利的布局让使用者能够轻松携带备用弹药以及其他必要的装备，同时不会影响自由行动。",
+    "weight": "3900 g",
+    "volume": "6 L",
+    "variant_type": "generic",
+    "variants": [
+      {
+        "id": "us_ballistic_vest",
+        "name": { "str_sp": "US ballistic vest" },
+        "description": "This version is patterned in multi-environment camouflage, and was standard-issue for the US Army.",
+        "append": true
+      },
+      {
+        "id": "swat_ballistic_vest",
+        "name": { "str_sp": "SWAT ballistic vest" },
+        "description": "This version is colored black, and was once used by specialized police forces.  \"SWAT\" is emblazoned on the back.",
+        "color": "dark_gray",
+        "append": true
+      }
+    ],
+    "price": "1600 USD",
+    "price_postapoc": "10 USD",
+    "symbol": "[",
+    "material": [ "nylon", "kevlar_layered" ],
+    "color": "light_gray",
+    "warmth": 15,
+    "flags": [ "STURDY", "OUTER", "WATER_FRIENDLY" ],
+    "use_action": [ { "type": "attach_molle", "size": 10 }, { "type": "detach_molle" } ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "moves": 800,
+        "description": "Pocket for a large armor plate.",
+        "//": "Should fit a medium ESAPI plate snugly",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "2000 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "33 cm",
+        "moves": 800,
+        "description": "Pocket for a large armor plate.",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "21 cm",
+        "moves": 800,
+        "description": "Pocket for a medium armor plate.",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "volume_encumber_modifier": 0,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "21 cm",
+        "moves": 800,
+        "description": "Pocket for a medium armor plate.",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      }
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar_layered", "covered_by_mat": 95, "thickness": 4.4 }
+        ],
+        "encumbrance": 6,
+        "coverage": 100,
+        "cover_vitals": 90,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ],
+        "volume_encumber_modifier": 0.3
+      },
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "kevlar_layered", "covered_by_mat": 95, "thickness": 4.4 }
+        ],
+        "encumbrance": 0,
+        "coverage": 80,
+        "cover_vitals": 90,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "volume_encumber_modifier": 0
+      }
+    ]
+  }
+]

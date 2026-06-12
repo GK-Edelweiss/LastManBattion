@@ -1,0 +1,14 @@
+[
+{
+    "type": "npc",
+    "id": "russia_merchant",
+    "name_unique": "帕维尔·叶戈罗维奇·罗曼年科",
+    "name_suffix": "Prapor",
+    "class": "russia_merchant",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_merchant_russia",
+    "faction": "free_merchants",
+    "mission_offered": "MISSION_Prapor"
+  }
+]

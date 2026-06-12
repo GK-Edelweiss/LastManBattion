@@ -1,0 +1,92 @@
+[
+    {
+    "id": "TALK_HANS",
+    "type": "talk_topic",
+    "dynamic_line": "有什么需要的特殊装备吗?我收到的命令是需要有凭证才可以购买。 ",
+    "responses": [
+      {
+        "text":"[特殊交易品]交换一门迫击炮。",
+        "topic": "TALK_need_mortar",
+        "condition": {"u_has_item": "lmb_rampage_permit_1"}
+      },
+      {
+        "text":"[特殊交易品]一些迫击炮的弹药。",
+        "topic": "TALK_need_mortar_ammo",
+        "condition": {"u_has_item": "lmb_rampage_permit_1"}
+      },
+      {"text": "额...再说吧。","topic": "TALK_DONE"}
+    ]
+  },
+  {
+    "id": "TALK_need_mortar",
+    "type": "talk_topic",
+    "dynamic_line": "一门美制的M224轻型迫击炮，能够远距离发动攻击，对抗轻甲目标时效果比较好。你确认需要吗?。",
+    "responses": [
+      {
+        "text": "[150凤凰币]M224迫击炮。",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {"u_has_items": {"item": "Phoenix","count": 150}
+          }
+        },
+        "success": {
+        "topic": "TALK_hans_ty",
+        "effect": [
+            {"u_spawn_item":"mortar_m224","count": 1},
+            {"u_sell_item": "Phoenix","count": 150},
+            {"npc_consume_item": "Phoenix","count": 150}
+            ]
+        },
+        "failure": {"topic": "TALK_hans_no"}
+      },
+      {
+        "text": "让我想想....。",
+        "topic": "TALK_HANS"
+      }
+    ]
+  },
+  {
+    "id": "TALK_need_mortar_ammo",
+    "type": "talk_topic",
+    "dynamic_line": "5发M768 60MM高爆迫击炮弹药，现代化弹药，更稳定，高爆弹对付轻甲敌人非常合适。",
+    "responses": [
+      {
+        "text": "[50凤凰币]10发M768 60MM高爆迫击炮弹药。",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {"u_has_items": {"item": "Phoenix","count": 50}
+          }
+        },
+        "success": {
+        "topic": "TALK_hans_ty",
+        "effect": [
+            {"u_spawn_item":"60mm_shell_m768","count": 10},
+            {"u_sell_item": "Phoenix","count": 50},
+            {"npc_consume_item": "Phoenix","count": 50}
+            ]
+        },
+        "failure": {"topic": "TALK_hans_no"}
+      },
+      {
+        "text": "让我想想....。",
+        "topic": "TALK_JTF_need"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hans_ty",
+    "type": "talk_topic",
+    "dynamic_line": "希望这些东西能帮到你。",
+    "responses": [
+      {"text": "当然了。","topic": "TALK_DONE"}
+    ]
+  },
+  {
+    "id": "TALK_hans_no",
+    "type": "talk_topic",
+    "dynamic_line": "货币不够，我的朋友。",
+    "responses": [
+      {"text": "好吧。","topic": "TALK_DONE"}
+    ]
+  }
+]

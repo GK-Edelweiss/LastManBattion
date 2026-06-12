@@ -1,0 +1,380 @@
+[
+  {
+    "id": "MISSION_RAMAPAGE_1",
+    "type": "mission_definition",
+    "name": { "str": "失联的小队" },
+    "description": "一个在外巡逻的小队失去了联系，在最后一次联络时他们声称收集到了情报，去调查小队的情况。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 0,
+    "item": "lmb_rampage_note_mission",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "field",
+        "reveal_radius": 2,
+        "random": true,
+        "search_range": 200,
+		"z":0
+      },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "       d                ",
+          "       @                ",
+          "                        ",
+          "           @            ",
+          "          bd            ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "items": { "@": { "item": "last_man_battletion_rifleman", "chance": 100 } },
+        "item": { "d": [{ "item": "corpse" } ],"b": [{ "item": "lmb_rampage_note_mission" } ] },
+         "place_monster": [ {
+            "monster": "LMB_new_Rifleman",
+            "x": 5,
+            "y": 5
+          },
+          {
+            "monster": "LMB_new_Rifleman",
+            "x": 21,
+            "y": 3
+          },
+          {
+            "monster": "LMB_new_Rifleman",
+            "x": 3,
+            "y":16
+          },
+          {
+            "monster": "LMB_Sniper",
+            "x": 18,
+            "y": 13
+          } ],
+          "place_vehicles": [
+        {
+          "vehicle": "humvee",
+          "x": 11,
+          "y": 12,
+          "fuel": 60,
+          "status": -1
+        }
+      ]
+    }
+    },
+    "end": {
+      "effect": [
+        {"u_sell_item": "lmb_rampage_note_mission","count": 1},
+        { "u_spawn_item": "Phoenix", "count": 200 },
+        {"npc_consume_item": "lmb_rampage_note_mission","count": 1}
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_RAMAPAGE_2",
+    "has_generic_rewards": false,
+    "dialogue": {
+      "describe": "我手上正好有个活需要有人帮助。",
+      "offer": "在前来这的路上我们收到了一支侦查队伍的求救信号，他们声称自己收集到了许些情报，但是还没来得及前往救援就与他们失去联系了，现在我需要有人去搜寻他们。",
+      "accepted": "信号最后出现的地点我标记在地图上了，祝你好运。",
+      "rejected": "我会找其他人来解决这个问题的。",
+      "advice": "我不知道他们遭遇了什么，但是你应该备好武器。",
+      "inquire": "行动进行的怎么样了？",
+      "success": "虽然很难过听到这个结果，但是我们会立即开始分析这份资料。",
+      "success_lie": "？",
+      "failure": "？"
+    }
+},
+{
+    "id": "MISSION_RAMAPAGE_2",
+    "type": "mission_definition",
+    "name": { "str": "无果之路" },
+    "description": "侦查资料指向了一处野战阵地，找到他带回里面的设备。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 0,
+    "item": "lmb_rampage_note_mission_1",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "field",
+        "reveal_radius": 2,
+        "random": true,
+        "search_range": 200,
+		"z":0
+      },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          " pppppppppppppppppppppp ",
+          " pffffffffffffffffffffp ",
+          " pfssssssssssssssssssfp ",
+          " pfs   s b  b   sdddsfp ",
+          " pfsb b   M  M     dsfp ",
+          " pfsb  s   bb   sdddsfp ",
+          " pfss ssssssss ssssssfp ",
+          " pfs   s   b    b       ",
+          " pfsbh s                ",
+          " pfs g s          b     ",
+          " pfs g s                ",
+          " pfs t s          b     ",
+          " pfs   s            b   ",
+          " pfs  ssb        b      ",
+          " pfs   b                ",
+          " pfss ss      b sssssfp ",
+          " pfsd ds        sfffffp ",
+          " pfsd ds        sfppppp ",
+          " pfsddds   b   bsfp     ",
+          " pfsssssb  b    sfp     ",
+          " pffffff        ffp     ",
+          " ppppppp        ppp     ",
+          "                        "
+        ],
+        "terrain": { "f": "t_fence_barbed", "d": "t_dirtmound", "p": "t_pit_shallow","M": "t_pit_shallow" },
+        "furniture": { "s": "f_sandbag_half","t": "f_table","g": "f_rack","h": "f_rack" },
+        "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+        "items": { "g": [{ "item": "LMB_rampage_mortar_itmes", "chance": 100 ,"repeat": [ 5, 10 ]}],"h": [{ "item": "LMB_rampage_mortar_itmes", "chance": 100 ,"repeat": [ 5, 10 ]}] },
+        "item": { "d": [{ "item": "50_casing","repeat": [ 5, 10 ] } ],"M": [{ "item": "60mm_propellant" } ],"g": [{ "item": "60mm_propellant" } ],"h": [{ "item": "lmb_rampage_note_mission_1" } ] },
+        "place_monsters": [ 
+      { "monster": "GROUP_RAMVPAGE_MISSION_2", "x": 12, "y": 10, "repeat": [ 1, 2 ],"density": 0.2 },
+      { "monster": "GROUP_RAMVPAGE_MISSION_2", "x": 18, "y": 20, "repeat": [ 1, 2 ],"density": 0.2 } ]
+    }
+    },
+    "end":{
+      "effect": [
+        {"u_sell_item": "lmb_rampage_note_mission_1","count": 1},
+        { "u_spawn_item": "Phoenix", "count": 200 },
+        { "u_spawn_item": "nl545di", "count": 1 },
+        { "u_spawn_item": "ak74mag", "count": 4 },
+        { "u_spawn_item": "rpk74mag", "count": 2 },
+        {"npc_consume_item": "lmb_rampage_note_mission_1","count": 1}
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_RAMAPAGE_3",
+    "has_generic_rewards": false,
+    "dialogue": {
+      "describe": "上次你拿回来的东西有进展了。",
+      "offer": "侦查队员发现了一处大灾变时当地士兵建立的野战迫击炮阵地，但是他们没有发现迫击炮的踪迹。不管有没有迫击炮在现场，你都要去找到他的踪迹。",
+      "accepted": "这个阵地我标记出来了，祝你好运。",
+      "rejected": "我会找其他人来解决这个问题的。",
+      "advice": "侦查报告里提到有一些僵尸在那徘徊，应该是这个阵地原本的主人。",
+      "inquire": "行动进行的怎么样了？",
+      "success": "该死，那些东西落在了别人手里的话会十分危险，我们必须立刻找到丢失的迫击炮。",
+      "success_lie": "？",
+      "failure": "？"
+    }
+},
+{
+	"type":"item_group",
+	"id":"LMB_rampage_mortar_itmes",
+	"//":"货架上的迫击炮装药",
+	"subtype":"distribution",
+	"entries":[
+	{"item":"60mm_propellant","prob":100},
+	{"item":"ammunition_tube_mortar","prob":20,"contents-item":"60mm_shell_m768"},
+	{"item":"ammunition_tube_mortar","prob":20,"contents-item":"60mm_shell_m720a1"},
+	{"item":"ammunition_tube_mortar","prob":60}
+	]
+},
+  {
+    "id": "MISSION_RAMAPAGE_3",
+    "type": "mission_definition",
+    "name": { "str": "赴汤蹈火" },
+    "description": "LMB的一支小队夺取了一批轻型迫击炮，把它们找回来，否则我们将活在迫击炮攻击的梦魇之下。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 0,
+    "item": "lmb_rampage_note_mission_3",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "field",
+        "reveal_radius": 2,
+        "random": true,
+        "search_range": 250,
+		"z":0
+      },
+      "update_mapgen": {
+        "rows": [
+          "sssss            sssss  ",
+          "sddds           ssdddss ",
+          "sd              sd   ds ",
+          "sddds              m ds ",
+          "sssss           sd   ds ",
+          "                ssdddss ",
+          "                 sssss  ",
+          "                        ",
+          "          sss           ",
+          "        sss ss          ",
+          "        s               ",
+          "        ss   s          ",
+          "         s sss          ",
+          "         sss            ",
+          "                        ",
+          "                        ",
+          "                       s",
+          "              cccccccccs",
+          "              c     ttcs",
+          "              +      tcs",
+          "              +      hcs",
+          "              cgggggggcs",
+          "              cccccccccs",
+          "                  ssssss"
+        ],
+        "terrain": { "f": "t_fence_barbed", "d": "t_dirtmound", "M": "t_pit_shallow" },
+        "furniture": { "s": "f_sandbag_half","t": "f_table","h": "f_table","g": "f_rack","c": "f_canvas_wall","+": "f_canvas_door","m": "f_m224_mortar" },
+        "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+        "items": { "g": { "item": "ammo_can_60mm_m768_full", "chance": 100 ,"repeat": [ 1, 3 ]} },
+        "item": { "d": [{ "item": "50_casing","repeat": [ 5, 10 ] } ],"h": [{ "item": "lmb_rampage_note_mission_3" } ] },
+        "place_monster": [ {
+            "monster": "LMB_Rifleman",
+            "x": 2,
+            "y": 3
+          },
+          {
+            "monster": "LMB_Rifleman",
+            "x": 2,
+            "y": 20
+          },
+          {
+            "monster": "LMB_Rifleman",
+            "x": 5,
+            "y": 23
+          },
+          {
+            "monster": "Rouge_agent",
+            "x": 11,
+            "y": 7,
+            "name": "阿波罗"
+          },
+          {
+            "monster": "LMB_Gunner",
+            "x": 10,
+            "y": 12
+          },
+          {
+            "monster": "LMB_Sniper",
+            "x": 16,
+            "y": 5
+          },
+          {
+            "monster": "LMB_Sniper",
+            "x": 16,
+            "y": 5
+          }
+         ]
+      }
+      },
+    "end": {
+      "effect": [
+        {"u_sell_item": "lmb_rampage_note_mission_3","count": 1},
+        { "u_spawn_item": "Phoenix", "count": 200 },
+        { "u_spawn_item": "mortar_m224", "count": 1 },
+        { "u_spawn_item": "60mm_shell_m768", "count": 20 },
+        { "u_spawn_item": "lmb_rampage_permit_1", "count": 1 },
+        {"npc_consume_item": "lmb_rampage_note_mission_3","count": 1}
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "has_generic_rewards": false,
+    "dialogue": {
+      "describe": "紧急情况，我们现在就需要组织人手",
+      "offer": "在经过分析后我们从你上次带回的线索中得出了LMB的人已经把迫击炮带走了的结论。经过一些侦查情报的确认LMB正在训练他们的人操作这些迫击炮，我们不能坐视不管这种情况。",
+      "accepted": "我们已经确认了他们的迫击炮阵地位置，去把他们库存的迫击炮夺回来。",
+      "rejected": "我会找其他人来解决这个问题的。",
+      "advice": "仍然是LMB的士兵会跟你交战，多加小心。",
+      "inquire": "行动进行的怎么样了？",
+      "success": "很好，LMB的人已经失去了重火力，这批武器将为我们所用。我会给你一张许可证，这样你可以在我们这来买来更多的迫击炮和炮弹。",
+      "success_lie": "？",
+      "failure": "？"
+    }
+},
+{
+    "id": "lmb_rampage_note_mission_3",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str": "迫击炮存储箱" },
+    "description": "一个不小的橄榄绿色木质箱子，里面装着许些轻型迫击炮，看起来要直接带走可不简单....",
+    "category": "other",
+    "price": "100000USD",
+    "price_postapoc": "50000USD",
+    "material": [ "paper" ],
+    "flags": [ "MISSION_ITEM" ],
+    "weight": "45000 g",
+    "volume": "100000 ml",
+    "to_hit": -1
+  },
+  {
+    "id": "lmb_rampage_permit_1",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str": "迫击炮调用许可证" },
+    "description": "JTF外勤人员在向军械库请求调用某些装备时用于证明的纸张，上面写着需要调用的武器或装备的信息。这份许可证允许你获取M224轻型迫击炮和配套的炮弹。",
+    "category": "other",
+    "price": "5USD",
+    "price_postapoc": "20USD",
+    "material": [ "paper" ],
+    "flags": [ "MISSION_ITEM" ],
+    "weight": "1 g",
+    "volume": "1 ml",
+    "to_hit": -3
+  },
+  {
+    "id": "GROUP_RAMVPAGE_MISSION_2",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_zombie_soldier", "weight": 75 },
+      { "monster": "mon_feral_soldier", "weight": 25 }
+    ]
+  },
+  {
+    "id": "lmb_rampage_note_mission",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str": "侦查人员的情报" },
+    "description": "一个朴素的文件袋，里面装着珍贵的侦查情报。",
+    "category": "other",
+    "price": "5USD",
+    "price_postapoc": "0USD",
+    "material": [ "paper" ],
+    "flags": [ "MISSION_ITEM" ],
+    "weight": "200 g",
+    "volume": "300 ml",
+    "to_hit": -3
+  },
+  {
+    "id": "lmb_rampage_note_mission_1",
+    "type": "ITEM",
+"subtypes": [ "TOOL" ],
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str": "LMB士兵的记录" },
+    "description": "一名幸存者军队士兵的笔记，把他带回去或许能发现什么。",
+    "category": "other",
+    "price": "5USD",
+    "price_postapoc": "0USD",
+    "material": [ "paper" ],
+    "flags": [ "MISSION_ITEM" ],
+    "weight": "200 g",
+    "volume": "300 ml",
+    "to_hit": -3
+  }
+]

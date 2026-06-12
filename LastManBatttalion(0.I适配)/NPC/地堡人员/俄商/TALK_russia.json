@@ -1,0 +1,279 @@
+[
+  {
+    "id": "TALK_merchant_russia",
+    "type": "talk_topic",
+    "dynamic_line": "幸存者，要来些俄制的武器和子弹吗?",
+    "responses": [
+      {
+        "text": "你是什么人?",
+        "topic": "TALK_russia_A"
+      },
+      {
+        "text": "看看你有什么东西。",
+        "effect": "start_trade",
+        "topic": "TALK_merchant_russia"
+      },
+      {
+        "text": "我听说你似乎回收一些特殊的军用品。",
+        "topic": "TALK_russia_B"
+      },
+      {
+        "text": "有什么我可以干的活吗？",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "再见。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_A",
+    "type": "talk_topic",
+    "dynamic_line": "如你所见，我只是一个自由商会的商人。",
+    "responses": [
+      {
+        "text": "这里可是美国，你哪来这么多俄国人的东西?",
+        "topic": "TALK_russia_A_1"
+      },
+      {
+        "text": "我知道了。",
+        "topic": "TALK_mechanic_russia"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_A_1",
+    "type": "talk_topic",
+    "dynamic_line": "我在大灾变之前是北美军火公司的仓管，大灾变发生时我正一个人在一处存放俄国进口品的仓库里躲过一劫。后来我带着那个仓库的东西加入了自由商会，他们便让我出来把这些东西卖出去。就这样。",
+    "responses": [
+      {
+        "text": "听起来你很幸运。",
+        "topic": "TALK_merchant_russia"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_B",
+    "type": "talk_topic",
+    "dynamic_line": "是的，我在回收一些军用器件，总有人需要他们的。我会用JTF使用的货币支付给你。",
+    "responses": [
+      {
+        "text": "看看这些东西能卖多少?",
+        "topic": "TALK_russia_B_1"
+      },
+      {
+        "text": "这些部件要去什么地方找得到？",
+        "topic": "TALK_russia_B_2"
+      },
+      {
+        "text": "我会注意的。",
+        "topic": "TALK_merchant_russia"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_B_1",
+    "type": "talk_topic",
+    "dynamic_line": "让我看看....",
+    "responses": [
+      {
+        "text": "[坦克电池]凤凰币 ×400",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "lmb_loot_item_1",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_russia_ty",
+          "effect": [
+          {
+              "u_spawn_item":"Phoenix",
+              "count": 400
+            },
+            {
+              "u_sell_item": "lmb_loot_item_1",
+              "count": 1
+            },
+            {
+              "npc_consume_item": "lmb_loot_item_1",
+              "count": 1
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_russia_no"
+        }
+      },
+      {
+        "text": "[军用热成像组件]凤凰币 ×100",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "lmb_loot_item_2",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_russia_ty",
+          "effect": [
+          {
+              "u_spawn_item":"Phoenix",
+              "count": 100
+            },
+            {
+              "u_sell_item": "lmb_loot_item_2",
+              "count": 1
+            },
+            {
+              "npc_consume_item": "lmb_loot_item_2",
+              "count": 1
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_russia_no"
+        }
+      },
+      {
+        "text": "[砖型TNT]凤凰币 ×30",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "lmb_loot_item_3",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_russia_ty",
+          "effect": [
+          {
+              "u_spawn_item":"Phoenix",
+              "count": 30
+            },
+            {
+              "u_sell_item": "lmb_loot_item_3",
+              "count": 1
+            },
+            {
+              "npc_consume_item": "lmb_loot_item_3",
+              "count": 1
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_russia_no"
+        }
+      },
+      {
+        "text": "[MS2000频闪灯]凤凰币 ×25",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "lmb_loot_item_4",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_russia_ty",
+          "effect": [
+          {
+              "u_spawn_item":"Phoenix",
+              "count": 25
+            },
+            {
+              "u_sell_item": "lmb_loot_item_4",
+              "count": 1
+            },
+            {
+              "npc_consume_item": "lmb_loot_item_4",
+              "count": 1
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_russia_no"
+        }
+      },
+      {
+        "text": "[测距仪]凤凰币 ×50",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "lmb_loot_item_5",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_russia_ty",
+          "effect": [
+          {
+              "u_spawn_item":"Phoenix",
+              "count": 50
+            },
+            {
+              "u_sell_item": "lmb_loot_item_5",
+              "count": 1
+            },
+            {
+              "npc_consume_item": "lmb_loot_item_5",
+              "count": 1
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_russia_no"
+        }
+      },
+      {
+        "text": "我们谈谈其他的吧。",
+        "topic": "TALK_merchant_russia"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_B_2",
+    "type": "talk_topic",
+    "dynamic_line": "据我所知一些LMB士兵身上会带着这些东西。",
+    "responses": [
+      {
+        "text": "我了解了。",
+        "topic": "TALK_russia_B_1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_ty",
+    "type": "talk_topic",
+    "dynamic_line": "一手交钱，一手交货。",
+    "responses": [
+      {
+        "text": "当然了。",
+        "topic": "TALK_russia_B_1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_no",
+    "type": "talk_topic",
+    "dynamic_line": "你并没有带着这东西，对吧。",
+    "responses": [
+      {
+        "text": "嗯...是的。",
+        "topic": "TALK_russia_B_1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "MISSION_LMB_MILITARY_BASE",
+        "type": "mission_definition",
+        "name": { "str": "寻找军事基地" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "军事基地在这里。",
+        "destination": "mil_base_4a",
+        "start": {
+          "assign_mission_target": { "om_terrain": "mil_base_4a", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_AIRCRAFT_CARRIER",
+        "type": "mission_definition",
+        "name": { "str": "寻找航空母舰" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "航空母舰在这里。",
+        "destination": "aircraft_carrier_1a",
+        "start": {
+          "assign_mission_target": { "om_terrain": "aircraft_carrier_1a", "reveal_radius": 3, "cant_see": true }
+        }
+      },
+      {
+        "id": "MISSION_LMB_NUCLEAR_PLANT",
+        "type": "mission_definition",
+        "name": { "str": "寻找核电站" },
+        "goal": "MGOAL_GO_TO_TYPE",
+        "difficulty": 0,
+        "value": 0,
+        "description": "核电站在这里。",
+        "destination": "nuclear_plant_0_0_0",
+        "start": {
+          "assign_mission_target": { "om_terrain": "nuclear_plant_0_0_0", "reveal_radius": 3, "cant_see": true }
+        }
+      }
+]

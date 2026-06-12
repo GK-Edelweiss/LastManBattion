@@ -1,0 +1,124 @@
+[
+{
+    "id": "lmb_gun_p416",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"p416","contents-group":"sopmod","prob":30},
+	{"item":"p416","contents-item":"shoulder_strap","prob":70}
+          ]
+},
+{
+    "id": "lmb_gun_p416_1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"p416","contents-group":"sopmod","prob":5},
+	{"item":"p416","contents-item":"shoulder_strap","prob":90}
+          ]
+},
+{
+    "id": "lmb_gun_mgl",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"mgl","contents-item":"shoulder_strap"}
+          ]
+ },
+ {
+    "id": "lmb_gun_mp5",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"hk_mp5","contents-item":"shoulder_strap"}
+          ]
+},
+{
+    "id": "lmb_gun_s12",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"saiga_12","contents-item":"shoulder_strap"}
+          ]
+},
+{
+    "id": "lmb_gun_srs",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"srs","contents-item": [
+              "shoulder_strap",
+              "rifle_scope"
+            ]}
+          ]
+},
+{
+    "id": "lmb_gun_870",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+            {"item":"remington_870_express","contents-group":"shot_mod","prob":50},
+	{"item":"remington_870_express","contents-item":"shoulder_strap","prob":50}
+          ]
+},
+{
+  "//":"霰弹特殊配件",
+       "type":"item_group",
+    "id":"shot_mod",
+    "subtype":"collection",
+    "items":[
+    {"item":"sights_mount"},
+    {"item":"underbarrel_mount"},
+    {"item":"rail_mount"},
+    {"group":"shot_muzzle_group","prob":90},
+    {"group":"shot_sights_group","prob":90},
+    {"group":"underbarrel_group","prob":90},
+    {"item":"rail_laser_sight","prob":90},
+    {"item":"shoulder_strap"}
+    ]
+  },
+  {
+    "//":"算是通用的配件配置，瞄具组",
+         "type":"item_group",
+      "id":"sights_group",
+      "subtype":"distribution",
+      "items":[
+      {"item":"holo_sight","prob":30},
+      {"item":"red_dot_sight","prob":30},
+      {"item":"hybrid_sight_4x","prob":10},
+      {"item":"acog_scope","prob":20},
+      {"item":"rifle_scope","prob":10}
+      ]
+    },
+    {
+      "//":"霰弹专用瞄具组",
+           "type":"item_group",
+        "id":"shot_sights_group",
+        "subtype":"distribution",
+        "items":[
+        {"item":"holo_sight","prob":45},
+        {"item":"red_dot_sight","prob":45},
+        {"item":"acog_scope_mod","prob":10}
+        ]
+      },
+      {
+        "//":"霰弹专用枪口组",
+             "type":"item_group",
+          "id":"shot_muzzle_group",
+          "subtype":"distribution",
+          "items":[
+          {"item":"muzzle_brake","prob":80},
+          {"item":"shot_suppressor","prob":20}
+          ]
+        },
+        {
+          "//":"管下握把组",
+               "type":"item_group",
+            "id":"underbarrel_group",
+            "subtype":"distribution",
+            "items":[
+            {"item":"pistol_grip","prob":80},
+            {"item":"grip","prob":20}
+            ]
+          }
+          ]

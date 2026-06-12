@@ -1,0 +1,102 @@
+[
+    {
+        "type": "npc_class",
+        "id": "akayo_class",
+        "name": {
+          "str": "akayo"
+        },
+        "job_description": "进行规划行动",
+        "common": false,
+        "bonus_str": {"rng": [4,4]},
+        "bonus_dex": {"rng": [4,4]},
+        "bonus_int": {"rng": [4,4]},
+        "bonus_per": {"rng": [4,4]},
+        "worn_override": "akayo_worn",
+        "carry_override": "akayo_carry",
+        "weapon_override": "akayo_weapon",
+        "traits": [
+          {"trait": "IGNORE_SOUND"},
+          {"trait": "RETURN_TO_START_POS"}
+        ],
+        "skills": [
+          { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 4 ] }, { "constant": 0 } ] } ] } },
+          { "skill": "gun", "bonus": { "rng": [ 4, 4 ] } },
+          { "skill": "rifle", "bonus": { "rng": [ 4, 4 ] } }
+        ]
+    },
+    {
+      "type": "npc_class",
+      "id": "edelweiss_class",
+      "name": {
+        "str": "edelweiss"
+      },
+      "job_description": "侦查周围环境",
+      "common": false,
+      "bonus_str": {"rng": [4,4]},
+      "bonus_dex": {"rng": [4,4]},
+      "bonus_int": {"rng": [4,4]},
+      "bonus_per": {"rng": [4,4]},
+      "worn_override": "edelweiss_worn",
+      "carry_override": "edelweiss_carry",
+      "weapon_override": "edelweiss_weapon",
+      "traits": [
+        {"trait": "IGNORE_SOUND"},
+        {"trait": "RETURN_TO_START_POS"}
+      ],
+      "skills": [
+        { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 4 ] }, { "constant": 0 } ] } ] } },
+        { "skill": "gun", "bonus": { "rng": [ 4, 4 ] } },
+        { "skill": "rifle", "bonus": { "rng": [ 4, 4 ] } }
+      ]
+  },
+  {
+    "type": "npc_class",
+    "id": "vxxxl_class",
+    "name": {
+      "str": "vxxxl"
+    },
+    "job_description": "规划下次侦查行动",
+    "common": false,
+    "bonus_str": {"rng": [4,4]},
+    "bonus_dex": {"rng": [4,4]},
+    "bonus_int": {"rng": [4,4]},
+    "bonus_per": {"rng": [4,4]},
+    "worn_override": "vxxxl_worn",
+    "carry_override": "vxxxl_carry",
+    "weapon_override": "vxxxl_weapon",
+    "traits": [
+      {"trait": "IGNORE_SOUND"},
+      {"trait": "RETURN_TO_START_POS"}
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 4 ] }, { "constant": 0 } ] } ] } },
+      { "skill": "gun", "bonus": { "rng": [ 4, 4 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 4, 4 ] } }
+    ]
+},
+{
+  "type": "npc_class",
+  "id": "hans_class",
+  "name": {
+    "str": "hans"
+  },
+  "job_description": "为队长分担任务",
+  "common": false,
+  "bonus_str": {"rng": [4,4]},
+  "bonus_dex": {"rng": [4,4]},
+  "bonus_int": {"rng": [4,4]},
+  "bonus_per": {"rng": [4,4]},
+  "worn_override": "hans_worn",
+  "carry_override": "hans_carry",
+  "weapon_override": "hans_weapon",
+  "traits": [
+    {"trait": "IGNORE_SOUND"},
+    {"trait": "RETURN_TO_START_POS"}
+  ],
+  "skills": [
+    { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 4 ] }, { "constant": 0 } ] } ] } },
+    { "skill": "gun", "bonus": { "rng": [ 4, 4 ] } },
+    { "skill": "rifle", "bonus": { "rng": [ 4, 4 ] } }
+  ]
+}
+      ]

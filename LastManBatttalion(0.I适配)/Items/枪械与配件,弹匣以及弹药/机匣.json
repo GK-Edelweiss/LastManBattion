@@ -1,0 +1,320 @@
+[
+{
+    "id": "lmb_mk46_223_16barrl",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
+    "name": { "str": "MK-46 5.56mm 16英寸枪管套件" },
+    "description": "一套MK-46所使用的16英寸枪管套件，除了枪管本身外还包含了一系列的配套改件，用于MK-46轻机枪上.",
+    "weight": "1040 g",
+    "volume": "1550 ml",
+    "longest_side": "480 mm",
+    "integral_volume": "1550 ml",
+    "integral_weight": "1040 g",
+    "integral_longest_side": "41 cm",
+    "barrel_length": "406 mm",
+    "price": "260 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "aluminum", "plastic" ],
+    "symbol": ":",
+    "color": "green",
+    "location": "bore",
+    "mod_targets": [
+      "mg_object_fire_m249"
+    ],
+    "install_time": "5 m",
+    "ammo_modifier": [ "223" ],
+    "magazine_adaptor": [
+      [
+        "223",
+        [
+          "belt223",
+          "stanag30",
+          "stanag5",
+          "stanag5ranger",
+          "stanag10",
+          "stanag10ranger",
+          "stanag20",
+          "stanag20ranger",
+          "stanag30ranger",
+          "stanag40",
+          "stanag40ranger",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "pocket_mods": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [
+          "belt223",
+          "stanag30",
+          "stanag5",
+          "stanag5ranger",
+          "stanag10",
+          "stanag10ranger",
+          "stanag20",
+          "stanag20ranger",
+          "stanag30ranger",
+          "stanag40",
+          "stanag40ranger",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "survivor223mag"
+        ]
+      }
+    ],
+    "min_skills": [ [ "weapon", 1 ] ]
+  },
+  {
+    "id": "lmb_mk46_223_20barrel",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
+    "name": { "str": "MK-46 5.56mm 20英寸枪管套件" },
+    "description": "一套MK-46所使用的20英寸枪管套件，除了枪管本身外还包含了一系列的配套改件，用于MK-46轻机枪上.",
+    "weight": "1040 g",
+    "volume": "1550 ml",
+    "longest_side": "508 mm",
+    "integral_volume": "1550 ml",
+    "integral_weight": "1040 g",
+    "integral_longest_side": "41 cm",
+    "barrel_length": "508 mm",
+    "price": "260 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "aluminum", "plastic" ],
+    "symbol": ":",
+    "color": "green",
+    "location": "bore",
+    "mod_targets": [
+      "mg_object_fire_m249"
+    ],
+    "install_time": "5 m",
+    "ammo_modifier": [ "223" ],
+    "magazine_adaptor": [
+      [
+        "223",
+        [
+          "belt223",
+          "stanag30",
+          "stanag5",
+          "stanag5ranger",
+          "stanag10",
+          "stanag10ranger",
+          "stanag20",
+          "stanag20ranger",
+          "stanag30ranger",
+          "stanag40",
+          "stanag40ranger",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "pocket_mods": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [
+          "belt223",
+          "stanag30",
+          "stanag5",
+          "stanag5ranger",
+          "stanag10",
+          "stanag10ranger",
+          "stanag20",
+          "stanag20ranger",
+          "stanag30ranger",
+          "stanag40",
+          "stanag40ranger",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "survivor223mag"
+        ]
+      }
+    ],
+    "min_skills": [ [ "weapon", 1 ] ]
+  },
+  {
+    "id": "lmb_mk46_223_24barrel",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
+    "name": { "str": "MK-46 5.56mm 24英寸枪管套件" },
+    "description": "一套MK-46所使用的24英寸枪管套件，除了枪管本身外还包含了一系列的配套改件，用于MK-46轻机枪上.",
+    "weight": "1040 g",
+    "volume": "1550 ml",
+    "longest_side": "608 mm",
+    "integral_volume": "1550 ml",
+    "integral_weight": "1040 g",
+    "integral_longest_side": "41 cm",
+    "barrel_length": "608 mm",
+    "price": "260 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "aluminum", "plastic" ],
+    "symbol": ":",
+    "color": "green",
+    "location": "bore",
+    "mod_targets": [
+      "mg_object_fire_m249"
+    ],
+    "install_time": "5 m",
+    "ammo_modifier": [ "223" ],
+    "magazine_adaptor": [
+      [
+        "223",
+        [
+          "belt223",
+          "stanag30",
+          "stanag5",
+          "stanag5ranger",
+          "stanag10",
+          "stanag10ranger",
+          "stanag20",
+          "stanag20ranger",
+          "stanag30ranger",
+          "stanag40",
+          "stanag40ranger",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "pocket_mods": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [
+          "belt223",
+          "stanag30",
+          "stanag5",
+          "stanag5ranger",
+          "stanag10",
+          "stanag10ranger",
+          "stanag20",
+          "stanag20ranger",
+          "stanag30ranger",
+          "stanag40",
+          "stanag40ranger",
+          "stanag50",
+          "stanag60",
+          "stanag60drum",
+          "stanag90",
+          "stanag100",
+          "stanag100drum",
+          "stanag150",
+          "survivor223mag"
+        ]
+      }
+    ],
+    "min_skills": [ [ "weapon", 1 ] ]
+  },
+  {
+    "id": "lmb_mk46_762_20barrel",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
+    "name": { "str": "MK-48 7.62×51mm 20英寸枪管套件" },
+    "description": "一套MK-48所使用的20英寸枪管套件，除了枪管本身外还包含了一系列的配套改件，用于MK-46轻机枪上.",
+    "weight": "1040 g",
+    "volume": "1550 ml",
+    "longest_side": "480 mm",
+    "integral_volume": "1550 ml",
+    "integral_weight": "1040 g",
+    "integral_longest_side": "41 cm",
+    "barrel_length": "406 mm",
+    "price": "260 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "aluminum", "plastic" ],
+    "symbol": ":",
+    "color": "green",
+    "location": "bore",
+    "mod_targets": [
+      "mg_object_fire_m249"
+    ],
+    "install_time": "5 m",
+    "ammo_modifier": [ "308" ],
+    "magazine_adaptor": [
+      [
+        "308",
+        [
+          "belt308"
+        ]
+      ]
+    ],
+    "pocket_mods": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [
+          "belt762"
+        ]
+      }
+    ],
+    "min_skills": [ [ "weapon", 1 ] ]
+  },
+  {
+    "id": "lmb_mk46_762_24barrel",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
+    "name": { "str": "MK-48 7.62×51mm 24英寸枪管套件" },
+    "description": "一套MK-48所使用的24英寸枪管套件，除了枪管本身外还包含了一系列的配套改件，用于MK-46轻机枪上.",
+    "weight": "1040 g",
+    "volume": "1550 ml",
+    "longest_side": "608 mm",
+    "integral_volume": "1550 ml",
+    "integral_weight": "1040 g",
+    "integral_longest_side": "41 cm",
+    "barrel_length": "608 mm",
+    "price": "260 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "aluminum", "plastic" ],
+    "symbol": ":",
+    "color": "green",
+    "location": "bore",
+    "mod_targets": [
+      "mg_object_fire_m249"
+    ],
+    "install_time": "5 m",
+    "ammo_modifier": [ "308" ],
+    "magazine_adaptor": [
+      [
+        "308",
+        [
+          "belt308"
+        ]
+      ]
+    ],
+    "pocket_mods": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [
+          "belt308"
+        ]
+      }
+    ],
+    "min_skills": [ [ "weapon", 1 ] ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+    {
+      "id": "srsmag",
+      "type": "ITEM",
+      "subtypes": [ "MAGAZINE" ],
+      "name": {
+        "str_sp": "SRSA3专用弹匣"
+      },
+      "description": "SRSA3的专用弹匣，能装下10发7.62×51mm的子弹",
+      "weight": "400 g",
+      "volume": "250 ml",
+      "price": "15 USD",
+      "to_hit": -2,
+      "material": [
+        "plastic"
+      ],
+      "symbol": "#",
+      "color": "green",
+      "ammo_type": [
+        "308"
+      ],
+      "capacity": 7,
+      "pocket_data": [
+        {
+          "pocket_type": "MAGAZINE",
+          "rigid": true,
+          "ammo_restriction": {
+            "308": 10
+          }
+        }
+      ],
+      "reload_time": 140,
+      "flags": [
+        "MAG_BULKY"
+      ]
+    },
+    {
+      "id": "xm7mag",
+      "looks_like": "scarhmag",
+      "type": "ITEM",
+      "subtypes": [ "MAGAZINE" ],
+      "name": { "str_sp": "XM7 20发弹匣" },
+      "description": "XM7所使用的标准弹匣，能装入20发6.8mm通用弹",
+      "weight": "400 g",
+      "volume": "1 L",
+      "price": "189 USD",
+      "price_postapoc": "1 USD",
+      "material": [ "steel" ],
+      "symbol": "#",
+      "color": "light_gray",
+      "ammo_type": [ "6.8mm_type" ],
+      "reload_time": 160,
+      "flags": [ "MAG_BULKY" ],
+      "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "6.8mm_type": 20 } } ]
+    }
+]

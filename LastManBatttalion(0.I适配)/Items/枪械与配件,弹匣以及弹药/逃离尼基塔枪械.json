@@ -1,0 +1,42 @@
+[
+    
+  {
+    "id": "nl545di",
+    "looks_like": "modular_ar15",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "name": { "str_sp": "NL545(DI) 突击步枪" },
+    "description": "一款融合了AR-15平台人机工学设计的突击步枪，面向俄罗斯民用枪械市场廉价易得的5.45×39毫米弹药打造。由Custom Guns公司设计制造。型号中的DI意为直接气吹原理，该版本枪机部件采用AR式结构。",
+    "skill": "rifle",
+    "weight": "3000 g",
+    "volume": "2418 ml",
+    "longest_side": "895 mm",
+    "barrel_length": "413 mm",
+    "price": "1 kUSD 115 USD",
+    "price_postapoc": "200 USD",
+    "to_hit": -1,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": [ "545x39" ],
+    "dispersion": 200,
+    "durability": 9,
+    "default_mods": [ "offset_sight_rail" ],
+    "valid_mod_locations": [
+      [ "barrel", 1 ],
+      [ "bayonet lug", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 2 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights mount", 1 ],
+      [ "sling", 1 ],
+      [ "stock mount", 1 ],
+      [ "stock accessory", 2 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "ak74mag", "rpk74mag", "casket74mag" ] } ],
+    "melee_damage": { "bash": 11 }
+  }
+]

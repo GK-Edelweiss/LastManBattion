@@ -1,0 +1,149 @@
+[
+    {
+        "id": "TALK_AKAYO_0",
+        "type": "talk_topic",
+        "dynamic_line": "我想你就是刘菲提到的联络员。我是这个小队的队长牧灵，现在我们正在以此为据点工作。",
+        "responses": [
+          {
+            "text": "联络员?我还不知道我有这个称号。",
+            "topic": "TALK_AKAYO_1"
+          },
+          {
+            "text": "你们是怎么到这里来的？",
+            "topic": "TALK_AKAYO_2"
+          },
+          {
+            "text": "另外几个人都是你的队员吗？",
+            "topic": "TALK_AKAYO_3"
+          },
+          {
+            "text": "你们有什么工作需要我帮忙吗？",
+            "topic": "TALK_MISSION_LIST"
+          },
+          {
+            "text": "有什么物资可以交换吗？",
+            "topic": "TALK_AKAYO_4"
+          },
+          {
+            "text": "我了解了，那你们先忙，我先走了。",
+            "topic": "TALK_DONE"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO",
+        "type": "talk_topic",
+        "dynamic_line": "尸群的动向....其他的敌对势力....地区的基建完好程度....抱歉没注意到你，你还有什么想问的吗。",
+        "responses": [
+          {
+            "text": "联络员?我还不知道我有这个称号。",
+            "topic": "TALK_AKAYO_1"
+          },
+          {
+            "text": "为什么你们把这里当成据点？",
+            "topic": "TALK_AKAYO_2"
+          },
+          {
+            "text": "另外几个人都是你的队员吗？",
+            "topic": "TALK_AKAYO_3"
+          },
+          {
+            "text": "你们有什么工作需要我帮忙吗？",
+            "topic": "TALK_MISSION_LIST"
+          },
+          {
+            "text": "有什么物资可以交换吗？",
+            "topic": "TALK_AKAYO_4"
+          },
+          {
+            "text": "我了解了，那你们先忙，我先走了。",
+            "topic": "TALK_DONE"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO_1",
+        "type": "talk_topic",
+        "dynamic_line": "刘菲没有告诉你吗？你现在是我们与战地指挥部...或是你们说的掩体里的指挥官也就是刘菲的直接联络员。",
+        "responses": [
+          {
+            "text": "或许我该回去掩体里找他们要一些报酬作为工资。",
+            "topic": "TALK_AKAYO"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO_2",
+        "type": "talk_topic",
+        "dynamic_line": "我们从驻扎地搭乘直升机到这里，这个屋顶是我们的降落地点。这里的视野开阔，是我们执行任务的最好地点。",
+        "responses": [
+          {
+            "text": "直升机？你们还有多少人？",
+            "topic": "TALK_AKAYO_2_1"
+          },
+          {
+            "text": "你似乎还没有提过你们的任务是什么。",
+            "topic": "TALK_AKAYO_2_2"
+          },
+          {
+            "text": "听起来似乎是最佳位置了。",
+            "topic": "TALK_AKAYO"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO_2_1",
+        "type": "talk_topic",
+        "dynamic_line": "一个小型聚落。最开始是我的小队和几名幸存者，后来又有一些人加入了我们，整个聚落目前状态还不错....至少我们开始执行任务前还不错",
+        "responses": [
+          {
+            "text": "或许不少地方也分散着这种小型聚落",
+            "topic": "TALK_AKAYO"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO_2_2",
+        "type": "talk_topic",
+        "dynamic_line": "嗯....也不是什么秘密任务，我们负责侦查这片区域一切动作，及时通报任何动向并且快速反应。",
+        "responses": [
+          {
+            "text": "听起来是个简单的工作而已。",
+            "topic": "TALK_AKAYO"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO_3",
+        "type": "talk_topic",
+        "dynamic_line": "是的，在大灾变前我们是一支混编战斗群的下属侦查单位，在大灾变前一直执行任务到现在。",
+        "responses": [
+          {
+            "text": "看上去运气真好，到现在队伍也这么完整.",
+            "topic": "TALK_AKAYO"
+          }
+        ]
+      },
+      {
+        "id": "TALK_AKAYO_4",
+        "type": "talk_topic",
+        "dynamic_line": "你可以去找汉斯，他是我们的军需官。另一边的VXXXL他经常出去巡逻，或许他会有一些有趣的东西可以跟你交换。（暂未实装）",
+        "responses": [
+          {
+            "text": "我稍后会去找他。",
+            "topic": "TALK_AKAYO"
+          }
+        ]
+      },
+      {
+        "id": "TALK_LMB_NULL",
+        "type": "talk_topic",
+        "dynamic_line": "这个NPC目前还没有对话，以后会进行完善",
+        "responses": [
+          {
+            "text": "作者加班！",
+            "topic": "TALK_DONE"
+          }
+        ]
+      }
+]

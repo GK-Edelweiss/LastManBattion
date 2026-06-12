@@ -1,0 +1,266 @@
+[
+    {
+        "id": "lmb_loot_item_1",
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "looks_like":"large_storage_battery",
+        "name": { "str_sp":"6-STEN-140-M坦克电池"
+        },
+        "description": "一个不小且重的大型蓄电池，通常装在坦克上。你没法将它接入常规的车辆中，但是似乎有的人很需要它。",
+        "weight": "43235 g",
+        "volume": "15 L",
+        "price": "1000000USD",
+        "price_postapoc": "20000USD",
+        "to_hit": -3,
+        "material": [
+        "steel"
+        ],
+        "symbol": ";",
+        "color": "black"
+      },
+      {
+        "id": "lmb_loot_item_2",
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "looks_like":"power_supply",
+        "name": { "str_sp": "Iridium军用热成像模块" },
+        "description": "一个像个小盒子的电子仪器，是军用热成像系统的重要单元模块。",
+        "weight": "210 g",
+        "volume": "1 L",
+        "price": "150000USD",
+        "price_postapoc": "5000USD",
+        "to_hit": -3,
+        "material": [
+        "steel"
+        ],
+        "symbol": ";",
+        "color": "black"
+      },
+      {
+        "id": "lmb_loot_item_3",
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "looks_like":"chem_rdx",
+        "name": { "str_sp": "TP-200砖型TNT" },
+        "description": "一小袋用布袋包装的TNT，被用于地震勘探，钻孔炸药，破碎超大物品和执行特殊爆破作业时的中间雷管。",
+        "weight": "200 g",
+        "volume": "450 ml",
+        "price": "20000USD",
+        "price_postapoc": "1500USD",
+        "to_hit": -3,
+        "material": [
+        "steel"
+        ],
+        "symbol": ";",
+        "color": "black"
+      },
+      {
+        "id": "lmb_loot_item_4",
+        "type": "ITEM",
+"subtypes": [ "TOOL" ],
+        "name": { "str_sp": "MS2000指示器" },
+        "description": "美军常使用的频闪灯指示器，带有只有夜视仪才能看到的红外模式和普通的频闪模式，常用于夜间行动和救援指示。",
+        "weight": "150 g",
+        "volume": "220 ml",
+        "price": "32000USD",
+        "price_postapoc": "1250USD",
+        "to_hit": -3,
+        "material": [
+        "steel"
+        ],
+        "symbol": ";",
+        "color": "black"
+      },
+      {
+        "id": "lmb_loot_item_5",
+        "type": "ITEM",
+"subtypes": [ "TOOL" ],
+        "name": { "str_sp": "VR1500测距仪" },
+        "description": "一种手持光学设备，被用于测量它和目标之间的距离。",
+        "weight": "218 g",
+        "volume": "550 ml",
+        "price": "32000USD",
+        "price_postapoc": "2500USD",
+        "to_hit": -3,
+        "material": [
+        "steel"
+        ],
+        "symbol": ";",
+        "color": "black"
+      },
+      {
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "id": "LMB_ammo_box_556",
+        "category": "other",
+        "name": {
+          "str": "5.56x45mm M855 弹药包(90发装)",
+          "str_pl": "5.56x45mm M855 弹药包(90发装)"
+        },
+        "looks_like": "mre_beef_box",
+        "description": "一个小盒子，装着90颗5.56x45mm M855子弹。激活以打开获取里面的子弹。",
+        "weight": "1080 g",
+        "volume": "370 ml",
+        "price": "0USD",
+        "price_postapoc": "0USD",
+        "to_hit": -1,
+        "use_action": {
+          "type": "unpack",
+          "group": "lmb_ammo_855"
+        },
+        "material": [
+          "plastic",
+          "aluminum"
+        ],
+        "symbol": ";",
+        "color": "light_gray"
+      },
+      {
+        "id": "lmb_ammo_855",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"item":"556","count":3}
+              ]
+    },
+      {
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "id": "LMB_ammo_box_556_1",
+        "category": "other",
+        "name": {
+          "str": "5.56x45mm M855A1 弹药包(90发装)",
+          "str_pl": "5.56x45mm M855A1 弹药包(90发装)"
+        },
+        "looks_like": "mre_beef_box",
+        "description": "一个小盒子，装着90颗5.56x45mm M855A1子弹。激活以打开获取里面的子弹。",
+        "weight": "1080 g",
+        "volume": "370 ml",
+        "price": "0USD",
+        "price_postapoc": "0USD",
+        "to_hit": -1,
+        "use_action": {
+          "type": "unpack",
+          "group": "lmb_ammo_855a1"
+        },
+        "material": [
+          "plastic",
+          "aluminum"
+        ],
+        "symbol": ";",
+        "color": "light_gray"
+      },
+      {
+        "id": "lmb_ammo_855a1",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"item":"556_m855a1","count":3}
+              ]
+    },
+      {
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "id": "LMB_ammo_box_556_2",
+        "category": "other",
+        "name": {
+          "str": "5.56x45mm MK262 弹药包(90发装)",
+          "str_pl": "5.56x45mm MK262 弹药包(90发装)"
+        },
+        "looks_like": "mre_beef_box",
+        "description": "一个小盒子，装着90颗5.56×45北约标准的MK262训练用子弹。激活以打开获取里面的子弹。",
+        "weight": "1080 g",
+        "volume": "370 ml",
+        "price": "0USD",
+        "price_postapoc": "0USD",
+        "to_hit": -1,
+        "use_action": {
+          "type": "unpack",
+          "group": "lmb_ammo_mk262"
+        },
+        "material": [
+          "plastic",
+          "aluminum"
+        ],
+        "symbol": ";",
+        "color": "light_gray"
+      },
+      {
+        "id": "lmb_ammo_mk262",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"item":"556_mk262","count":3}
+              ]
+    },
+      {
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "id": "LMB_ammo_box_556_3",
+        "category": "other",
+        "name": {
+          "str": "5.56x45mm MK318 弹药包(90发装)",
+          "str_pl": "5.56x45mm MK318 弹药包(90发装)"
+        },
+        "looks_like": "mre_beef_box",
+        "description": "一个小盒子，装着90颗5.56x45mm MK318高精度狙击用子弹。激活以打开获取里面的子弹。",
+        "weight": "1080 g",
+        "volume": "370 ml",
+        "price": "0USD",
+        "price_postapoc": "0USD",
+        "to_hit": -1,
+        "use_action": {
+          "type": "unpack",
+          "group": "lmb_ammo_mk318"
+        },
+        "material": [
+          "plastic",
+          "aluminum"
+        ],
+        "symbol": ";",
+        "color": "light_gray"
+      },
+      {
+        "id": "lmb_ammo_mk318",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"item":"556_mk318","count":3}
+              ]
+    },
+    {
+      "type": "ITEM",
+      "subtypes": [ "TOOL" ],
+      "id": "LMB_ammo_box_762",
+      "category": "other",
+      "name": {
+        "str": "7.62x51mm M80 弹药包(40发装)",
+        "str_pl": "7.62x51mm M80 弹药包(40发装)"
+      },
+      "looks_like": "mre_beef_box",
+      "description": "一个小盒子，装着40颗7.62x51mm M80穿甲弹。激活以打开获取里面的子弹。",
+      "weight": "1080 g",
+      "volume": "470 ml",
+      "price": "0USD",
+      "price_postapoc": "0USD",
+      "to_hit": -1,
+      "use_action": {
+        "type": "unpack",
+        "group": "lmb_ammo_762"
+      },
+      "material": [
+        "plastic",
+        "aluminum"
+      ],
+      "symbol": ";",
+      "color": "light_gray"
+    },
+    {
+      "id": "lmb_ammo_762",
+      "type": "item_group",
+      "subtype": "distribution",
+      "entries": [
+       {"item":"762_51","count":2}
+            ]
+  }
+]

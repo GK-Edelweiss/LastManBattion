@@ -1,0 +1,97 @@
+[
+{
+	"type":"item_group",
+	"id":"SHD_equipment",
+	"subtype":"distribution",
+	"magazine": 100,
+	"ammo": 60,
+	"entries":[
+	{"item":"first_wave_TDI","prob":50},
+	{"item":"first_wave_m1a","prob":50},
+	{"group":"lonestar_pack","prob":10},
+	{"item":"socom_mk20","prob":20},
+	{"item":"akm_merciless","prob":15},
+	{"group":"fire_mk48","prob":1}
+	]
+},
+{
+	"type":"item_group",
+	"id":"fire_mk48",
+	"subtype":"collection",
+	"entries": [
+         {"item":"mg_object_fire_m249"},
+         {"item":"lmb_mk46_223_16barrl"},
+		 {"item":"lmb_mk46_223_20barrel"},
+		 {"item":"lmb_mk46_223_24barrel"},
+		 {"item":"lmb_mk46_762_20barrel"},
+		 {"item":"lmb_mk46_762_24barrel"}
+              ]
+},
+{
+	"type":"item_group",
+	"id":"lonestar_pack",
+	"subtype":"collection",
+	"entries": [
+         {"item":"lone_star_pack"},
+         {"group":"lonestar_box","count":3}
+              ]
+},
+{
+        "id": "lonestar_box",
+        "type": "item_group",
+        "subtype": "distribution",
+        "entries": [
+         {"item":"ls_bag_box_40l"},
+         {"item":"ls_bag_box_30l"},
+         {"item":"ls_bag_box_20l"},
+		 {"item":"ls_bag_box_10l"},
+		 {"item":"ls_bag_box_10l_ammo"},
+		 {"item":"ls_bag_box_10l_food"},
+		 {"item":"ls_bag_box_5l"},
+		 {"item":"ls_bag_box_5l_weight"}
+              ]
+  },
+{
+	"type":"item_group",
+	"id":"military",
+	"magazine": 100,
+	"ammo": 60,
+	"subtype":"distribution",
+	"items":[
+	["hk416d",10],
+	["hkmg4",10],
+	["srs",10],
+	["srsmag",20],
+	["hk416_only",10],
+	["sat8",10]
+	]
+},
+{
+	"type":"item_group",
+	"id":"mil_hw",
+	"magazine": 100,
+	"ammo": 60,
+	"subtype":"distribution",
+	"items":[
+	["hk416d",10],
+	["hkmg4",10],
+	["srs",10],
+	["srsmag",20],
+	["hk416_only",10],
+	["sat8",10]
+	]
+	},
+{
+	"type":"item_group",
+	"id":"LMB_military_gun",
+	"items":[
+	{"item":"modular_m27_assault_rifle"},
+	{"item":"mgl"},
+	{"item":"hk_mp5"},
+    {"item":"saiga_12"},
+    {"item":"m110a1"},
+	{"item":"remington_870_express"},
+	{"item":"steyr_aug"}
+]
+}
+]
